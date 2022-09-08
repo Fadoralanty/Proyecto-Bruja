@@ -14,6 +14,6 @@ public class Movement : MonoBehaviour
 
     public void Move(Vector2 dir)
     {
-        _rb.velocity = (_Speed * Time.fixedDeltaTime * dir);
+        _rb.velocity = (_Speed * dir);
     }
 }
