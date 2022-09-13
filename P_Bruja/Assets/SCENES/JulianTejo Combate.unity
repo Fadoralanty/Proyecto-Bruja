@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 473717498}
   - component: {fileID: 473717499}
+  - component: {fileID: 473717500}
   m_Layer: 0
   m_Name: MeleeHitbox
   m_TagString: Untagged
@@ -180,6 +181,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &473717500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473717497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f9c09252baadf4b823a68589b91608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _knockback: 0
+  _meleeAttackHitBox: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,12 +375,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2079966224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7f9c09252baadf4b823a68589b91608, type: 3}
+  m_Script: {fileID: 11500000, guid: b80f50201b284884280e434a4dd2dfdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
-  _knockback: 0
-  _meleeAttackHitBox: {fileID: 0}
+  _maxLife: 100
+  _currentLife: 0
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &2079966230
 BoxCollider2D:
   m_ObjectHideFlags: 0

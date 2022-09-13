@@ -20,7 +20,7 @@ public class MeleeAttack : MonoBehaviour
     {
         transform.position = dir;
         _meleeAttackHitBox.enabled = true;
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(time);//cuanto dura el ataque activo
         _meleeAttackHitBox.enabled = false;
         transform.position=Vector3.zero;
     }
