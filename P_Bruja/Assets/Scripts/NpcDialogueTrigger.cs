@@ -40,6 +40,7 @@ public class NpcDialogueTrigger : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             isPlayerInRange = true;
+
         }
         speechBubbleSprite.SetActive(true);
     }
@@ -49,6 +50,8 @@ public class NpcDialogueTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = false;
+            isDialogueStarted = false; // Permite reiniciar el dialogo cuando te alejas
+            Dialogue_Manager.instance.CloseDialogue(); //Cierra el dialogo cuando te alejas
         }
         speechBubbleSprite.SetActive(false);
     }
