@@ -52,7 +52,7 @@ public class Dialogue_Manager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.05f);//delay entre cada letra
+            yield return 0;//delay entre cada letra - Sigue existiendo delay aun que sea 0 hay que arreglar esto para que aparezca de una
         }
     }
     public void DisplayNextSentence()
@@ -70,6 +70,8 @@ public class Dialogue_Manager : MonoBehaviour
 
     public void EndDialogue()
     {
+        //Agregado para poder cerrarlo sin tener que apretar la X
+        dialogueCanvas.SetActive(false);
     }
 
     public void CloseDialogue()
