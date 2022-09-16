@@ -9,8 +9,10 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] private LayerMask _targetMask;
     private Vector2 center;
     private Vector2 attackDir;
+    private bool _isAttacking;
     public IEnumerator Attack(Vector2 dir,float time)
     {
+        _isAttacking = true;
         attackDir = (Vector2)transform.position + dir;
         Collider2D[] hitTargets = Physics2D.OverlapBoxAll(attackDir,  Vector2.one, 0,_targetMask);
         foreach (Collider2D hit in hitTargets)
@@ -18,11 +20,12 @@ public class MeleeAttack : MonoBehaviour
             hit.GetComponent<Damageable>().GetDamage(_damage);
         }
         yield return new WaitForSeconds(time);//Attack rate 
+        _isAttacking = false;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube(attackDir,Vector3.one );
+        if(_isAttacking) Gizmos.DrawWireCube(attackDir,Vector3.one );
     }
 }
