@@ -22,7 +22,8 @@ public class MeleeAttack : MonoBehaviour
         yield return new WaitForSeconds(time);//Attack rate 
         _isAttacking = false;
     }
-
+    
+    
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
