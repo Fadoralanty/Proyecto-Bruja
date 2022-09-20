@@ -304,14 +304,6 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 558979539}
-    - target: {fileID: 161728461, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
-      propertyPath: _attackRange
-      value: 1.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 161728461, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
-      propertyPath: _detectionRange
-      value: 3.46
-      objectReference: {fileID: 0}
     - target: {fileID: 1181904653097643010, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_RootOrder
       value: 3

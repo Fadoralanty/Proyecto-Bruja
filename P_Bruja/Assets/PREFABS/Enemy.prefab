@@ -165,6 +165,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
+  _detectionRange: 3.46
+  _attackRange: 1.54
+  _meleeAttackRate: 1
 --- !u!114 &1450663847711777093
 MonoBehaviour:
   m_ObjectHideFlags: 0

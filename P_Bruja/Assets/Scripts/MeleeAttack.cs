@@ -9,7 +9,6 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] private LayerMask _targetMask;
     private Vector2 center;
     private Vector2 attackDir;
-    private bool _isAttacking;
     public void Attack(Vector2 dir)
     {
         attackDir = (Vector2)transform.position + dir;

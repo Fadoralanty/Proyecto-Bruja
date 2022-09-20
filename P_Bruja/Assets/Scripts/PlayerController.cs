@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 _moveDir;
     private float _currMeleeTime;
     private float _currRangedTime;
+    private bool _isAttacking;
     private void Awake()
     {
         _movement = GetComponent<Movement>();
@@ -37,31 +38,37 @@ public class PlayerController : MonoBehaviour
         if (_moveDir != Vector2.zero) _lookDir = _moveDir;
         if (Input.GetButtonDown("Fire1"))
         {
-            if (_currMeleeTime >= _meleeAttackRate)
-            {
-                MeleeAttack();
-                _currMeleeTime = 0f;
-            }
+            MeleeAttack();
+        }
+        else
+        {
+            _isAttacking = false;
         }     
+        
         if (Input.GetButtonDown("Fire2"))
         {
-            if (_currRangedTime >= _rangedAttackRate)
-            {
-                RangedAttack();
-                _currMeleeTime = 0f;
-            }
+            RangedAttack();
         }
 
     }
 
     void MeleeAttack()
     {
-        _meleeAttack.Attack(_lookDir);
+        if (_currMeleeTime >= _meleeAttackRate)
+        {
+            _isAttacking = true;
+            _meleeAttack.Attack(_lookDir);
+            _currMeleeTime = 0f;
+        }
     }
 
     void RangedAttack()
     {
-        _rangedAttack.Attack(transform.rotation);
+        if (_currRangedTime >= _rangedAttackRate)
+        {
+            _rangedAttack.Attack(transform.rotation);
+            _currMeleeTime = 0f;
+        }
     }
     
     private void FixedUpdate()
@@ -73,5 +80,8 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.white;
         Gizmos.DrawLine(transform.position, (Vector2)transform.position + _lookDir);
+        
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube((Vector2)transform.position + _lookDir, Vector2.one);
     }
 }
