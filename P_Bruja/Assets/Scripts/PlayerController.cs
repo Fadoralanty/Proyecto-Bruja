@@ -52,4 +52,10 @@ public class PlayerController : MonoBehaviour
     {
         _movement.Move(_moveDir.normalized);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.white;
+        Gizmos.DrawLine(transform.position, (Vector2)transform.position + _lookDir);
+    }
 }
