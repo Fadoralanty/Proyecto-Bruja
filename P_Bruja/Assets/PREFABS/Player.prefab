@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3900100625768524065}
   - component: {fileID: 6374350503052284268}
   - component: {fileID: 2079966235}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lookDir: {x: 0, y: 0}
+  _meleeAttack: {fileID: 0}
+  _rangedAttack: {fileID: 0}
 --- !u!114 &2853348631792066260
 MonoBehaviour:
   m_ObjectHideFlags: 0
