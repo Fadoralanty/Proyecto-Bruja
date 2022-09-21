@@ -73,6 +73,7 @@ public class PlayerController : MonoBehaviour
     
     private void FixedUpdate()
     {
+        if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
         _movement.Move(_moveDir.normalized);
     }
 
