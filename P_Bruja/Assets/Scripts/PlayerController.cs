@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Movement))]
+[RequireComponent(typeof(MeleeAttack))]
+[RequireComponent(typeof(RangedAttack))]
+[RequireComponent(typeof(Damageable))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Vector2 _lookDir;
@@ -10,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _meleeAttackRate;
     [SerializeField] private RangedAttack _rangedAttack;
     [SerializeField] private float _rangedAttackRate;
+    private Damageable _damageable;
     private Movement _movement;
     private Vector2 _moveDir;
     private float _currMeleeTime;
@@ -17,17 +21,19 @@ public class PlayerController : MonoBehaviour
     private bool _isAttacking;
     private void Awake()
     {
-        _movement = GetComponent<Movement>();
-    }
-
-    private void Start()
-    {
-        _meleeAttack = GetComponent<MeleeAttack>();
-        _rangedAttack = GetComponent<RangedAttack>();
         _currMeleeTime = 0;
         _currRangedTime = 0;
     }
 
+    private void Start()
+    {
+        _movement = GetComponent<Movement>();
+        _meleeAttack = GetComponent<MeleeAttack>();
+        _rangedAttack = GetComponent<RangedAttack>();
+        _damageable = GetComponent<Damageable>();
+        _damageable.onDie.AddListener(OnDieListener);
+    }
+    
     private void Update()
     {
         _currMeleeTime += Time.deltaTime;
@@ -52,6 +58,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void OnDieListener()
+    {
+        //TODO
+        //play die animation
+        //restrict input
+        //destroy or deactivate gameObject
+        Destroy(gameObject);
+    }
     void MeleeAttack()
     {
         if (_currMeleeTime >= _meleeAttackRate)
