@@ -1,11 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public bool canMove;
     [SerializeField] float _Speed;
     Rigidbody2D _rb;
+
+    private void Awake()
+    {
+        canMove = true;
+    }
 
     void Start()
     {
@@ -14,7 +21,9 @@ public class Movement : MonoBehaviour
 
     public void Move(Vector2 dir)
     {
-        _rb.velocity = (_Speed * dir);
+        if (!canMove) return;
+        transform.position += (Vector3)( _Speed * Time.deltaTime * dir);
     }
+    
     
 }

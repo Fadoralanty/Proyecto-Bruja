@@ -199,6 +199,9 @@ MonoBehaviour:
   _targetMask:
     serializedVersion: 2
     m_Bits: 64
+  _hasKnockback: 1
+  _knockback: 10
+  _knockbackTime: 0.15
 --- !u!114 &2079966235
 MonoBehaviour:
   m_ObjectHideFlags: 0
