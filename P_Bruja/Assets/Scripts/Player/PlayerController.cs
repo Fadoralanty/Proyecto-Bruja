@@ -55,7 +55,8 @@ public class PlayerController : MonoBehaviour
         {
             RangedAttack();
         }
-
+        if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
+        _movement.Move(_moveDir.normalized);
     }
 
     void OnDieListener()
@@ -85,11 +86,6 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    private void FixedUpdate()
-    {
-        if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
-        _movement.Move(_moveDir.normalized);
-    }
 
     private void OnDrawGizmos()
     {
