@@ -2363,22 +2363,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2853348631792066260, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
-      propertyPath: _Speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2853348631792066261, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2853348631792066261, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2853348631792066263, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2512,6 +2496,10 @@ PrefabInstance:
     - target: {fileID: 4848694308073582915, guid: fe5ffa5e1523f0c4199e9dbacbbb980e, type: 3}
       propertyPath: m_Name
       value: NPC INK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4848694308073582915, guid: fe5ffa5e1523f0c4199e9dbacbbb980e, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 4848694308073582919, guid: fe5ffa5e1523f0c4199e9dbacbbb980e, type: 3}
       propertyPath: m_RootOrder

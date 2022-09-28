@@ -39,10 +39,17 @@ public class PlayerController : MonoBehaviour
         if (Game_Manager.instance.isGamePaused) return;
         _currMeleeTime += Time.deltaTime;
         _currRangedTime += Time.deltaTime;
+        
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical");
         _moveDir = new Vector2(hor, ver);
-        if (_moveDir != Vector2.zero) _lookDir = _moveDir;
+        
+        if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
+        if (_moveDir != Vector2.zero)
+        {
+            _lookDir = _moveDir;
+        }
+        
         if (Input.GetButtonDown("Fire1"))
         {
             MeleeAttack();
@@ -56,8 +63,12 @@ public class PlayerController : MonoBehaviour
         {
             RangedAttack();
         }
-        if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
-        _movement.Move(_moveDir.normalized);
+    }
+
+    private void FixedUpdate()
+    {
+         if (_moveDir != Vector2.zero)
+              _movement.Move(_moveDir.normalized);
     }
 
     void OnDieListener()
@@ -86,7 +97,6 @@ public class PlayerController : MonoBehaviour
             _currMeleeTime = 0f;
         }
     }
-    
 
     private void OnDrawGizmos()
     {
