@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //https://www.youtube.com/watch?v=vY0Sk93YUhA&list=WL&index=19
 public class INK_Dialogue_Trigger : MonoBehaviour
-{
+{ //TODO fixear problemas con input
     [Header("Visual Que")] 
     [SerializeField] private GameObject _visualQue;
     
@@ -20,6 +20,7 @@ public class INK_Dialogue_Trigger : MonoBehaviour
 
     private void Update()
     {
+        if (Game_Manager.instance.isGamePaused) return;
         if (_playerInRange && !INK_Dialogue_Manager.instance._isDialogueRunning)
         {
             _visualQue.SetActive(true);

@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     
     private void Update()
     {
+        if (Game_Manager.instance.isGamePaused) return;
         _currMeleeTime += Time.deltaTime;
         _currRangedTime += Time.deltaTime;
         float hor = Input.GetAxisRaw("Horizontal");
