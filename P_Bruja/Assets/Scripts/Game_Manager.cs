@@ -7,6 +7,7 @@ public class Game_Manager : MonoBehaviour
 {
     public static Game_Manager instance;
     [Range(-100, 100)] public int _morality;
+    public bool isGamePaused;
     private void Awake()
     {
         if (instance==null)
@@ -17,5 +18,17 @@ public class Game_Manager : MonoBehaviour
         {
             Destroy(this);
         }
+
+        isGamePaused = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isGamePaused = !isGamePaused;
+            Time.timeScale = isGamePaused ? 0f : 1f;
+        }
+
     }
 }

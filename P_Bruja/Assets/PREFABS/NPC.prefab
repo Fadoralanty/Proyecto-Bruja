@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 5241988976270770731}
   - component: {fileID: 5241988976270770730}
   - component: {fileID: 5241988976270770729}
-  - component: {fileID: 5241988976270770733}
   - component: {fileID: 5241988976270770726}
+  - component: {fileID: 1862869642}
   m_Layer: 0
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,24 +124,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5241988976270770733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5241988976270770732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5645c68fc2b65b84da83b874ebe6241c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogue:
-    _name: PIBE
-    _sentences:
-    - Hello <color=red>everyone</color>
-    - how are you?
-  speechBubbleSprite: {fileID: 5241988976485538352}
 --- !u!61 &5241988976270770726
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -168,6 +150,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1862869642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241988976270770732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7e4581b8fc39a41b3504a386ef3264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _visualQue: {fileID: 5241988976485538352}
+  inkJson: {fileID: 4900000, guid: 8bc900a683be3b7468cc7696c3fde513, type: 3}
 --- !u!1 &5241988976485538352
 GameObject:
   m_ObjectHideFlags: 0
