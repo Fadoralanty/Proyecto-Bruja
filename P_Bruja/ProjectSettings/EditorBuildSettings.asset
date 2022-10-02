@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SCENES/JulianTejo Combate.unity
     guid: 9716b823b37210e4087f8dcc5c221a32
-  - enabled: 0
+  - enabled: 1
     path: Assets/SCENES/Main Menu.unity
     guid: d08732362a6f5c24094aa29b7e066ef8
   - enabled: 1
