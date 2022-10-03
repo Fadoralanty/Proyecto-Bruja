@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: fcd22c01fe466d94fbcfebea5afb2880
+guid: 4e158bf5ffac5b64a8d288a68546401c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8079625144435258291
-    second: Detective Left sprite sheet_0
+      213: 9085709513521638366
+    second: Detective Hit sprite sheet_0
   - first:
-      213: 792725270115562254
-    second: Detective Left sprite sheet_1
+      213: -4408214717684609678
+    second: Detective Hit sprite sheet_1
   - first:
-      213: -561548868426835931
-    second: Detective Left sprite sheet_2
+      213: 890374249568970323
+    second: Detective Hit sprite sheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Detective Left sprite sheet_0
+      name: Detective Hit sprite sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 62
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,20 +114,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4c4f932db76fdf80800000000000000
-      internalID: -8079625144435258291
+      spriteID: edb28d51aace61e70800000000000000
+      internalID: 9085709513521638366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Detective Left sprite sheet_1
+      name: Detective Hit sprite sheet_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
-        height: 62
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e03b6b1ee63500b00800000000000000
-      internalID: 792725270115562254
+      spriteID: 27d82cae110e2d2c0800000000000000
+      internalID: -4408214717684609678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Detective Left sprite sheet_2
+      name: Detective Hit sprite sheet_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
-        height: 62
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,8 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5285565874af438f0800000000000000
-      internalID: -561548868426835931
+      spriteID: 356a6be99ae3b5c00800000000000000
+      internalID: 890374249568970323
       vertices: []
       indices: 
       edges: []
