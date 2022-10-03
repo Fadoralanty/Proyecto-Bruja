@@ -1331,6 +1331,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
   m_PrefabInstance: {fileID: 2853348633224506483}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2079966225
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079966224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15add06605d8a58419501da8d9d42073, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &2079966230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1348,7 +1367,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2, y: 1.96875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1364,6 +1383,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_Name
       value: Player
