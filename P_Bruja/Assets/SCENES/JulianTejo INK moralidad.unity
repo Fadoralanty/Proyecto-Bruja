@@ -1981,7 +1981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _visualQue: {fileID: 946560032}
-  inkJson: {fileID: 4900000, guid: 8bc900a683be3b7468cc7696c3fde513, type: 3}
+  inkJson: {fileID: 4900000, guid: 9a25b562bdac6f04ca6dd55081d08651, type: 3}
 --- !u!4 &1887674437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2853348631792066263, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
