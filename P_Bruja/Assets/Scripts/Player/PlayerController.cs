@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private Damageable _damageable;
     private Movement _movement;
     private Vector2 _moveDir;
+    private Animator _anim;
     private float _currMeleeTime;
     private float _currRangedTime;
     private bool _isAttacking;
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         _movement = GetComponent<Movement>();
+        _anim = GetComponent<Animator>();
         _meleeAttack = GetComponent<MeleeAttack>();
         _rangedAttack = GetComponent<RangedAttack>();
         _damageable = GetComponent<Damageable>();
@@ -43,7 +45,9 @@ public class PlayerController : MonoBehaviour
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical");
         _moveDir = new Vector2(hor, ver);
-        
+        _anim.SetFloat("AnimVelX", hor);
+        _anim.SetFloat("AnimVelY", ver);
+
         if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
         if (_moveDir != Vector2.zero)
         {
