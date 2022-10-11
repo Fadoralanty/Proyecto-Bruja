@@ -93,12 +93,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     void RangedAttack()
     {
         if (_currRangedTime >= _rangedAttackRate)
         {
-            _rangedAttack.Attack(transform.rotation);
-            _currMeleeTime = 0f;
+            _rangedAttack.Attack(_lookDir);
+            _currRangedTime = 0f;
         }
     }
 

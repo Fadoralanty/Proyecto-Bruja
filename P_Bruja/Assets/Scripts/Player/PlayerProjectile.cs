@@ -8,6 +8,7 @@ public class PlayerProjectile : MonoBehaviour
 {
     [SerializeField] private Movement _movement;
     [SerializeField] private float _damage;
+    public Vector2 dir;
     
     private void Start()
     {
@@ -16,7 +17,7 @@ public class PlayerProjectile : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _movement.Move(Vector2.right);
+        _movement.Move(dir);
         Destroy(gameObject,1f);
     }
 
