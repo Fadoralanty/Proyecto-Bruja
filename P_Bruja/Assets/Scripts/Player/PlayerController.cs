@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     private Damageable _damageable;
     private Movement _movement;
     private Vector2 _moveDir;
+    private Animator _anim;
     private float _currMeleeTime;
     private float _currRangedTime;
     private bool _isAttacking;
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         _movement = GetComponent<Movement>();
+        _anim = GetComponent<Animator>();
         _meleeAttack = GetComponent<MeleeAttack>();
         _rangedAttack = GetComponent<RangedAttack>();
         _damageable = GetComponent<Damageable>();
@@ -36,12 +38,22 @@ public class PlayerController : MonoBehaviour
     
     private void Update()
     {
+        if (Game_Manager.instance.isGamePaused) return;
         _currMeleeTime += Time.deltaTime;
         _currRangedTime += Time.deltaTime;
+        
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical");
         _moveDir = new Vector2(hor, ver);
-        if (_moveDir != Vector2.zero) _lookDir = _moveDir;
+        _anim.SetFloat("AnimVelX", hor);
+        _anim.SetFloat("AnimVelY", ver);
+
+        if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
+        if (_moveDir != Vector2.zero)
+        {
+            _lookDir = _moveDir;
+        }
+        
         if (Input.GetButtonDown("Fire1"))
         {
             MeleeAttack();
@@ -55,8 +67,12 @@ public class PlayerController : MonoBehaviour
         {
             RangedAttack();
         }
-        if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
-        _movement.Move(_moveDir.normalized);
+    }
+
+    private void FixedUpdate()
+    {
+         if (_moveDir != Vector2.zero)
+              _movement.Move(_moveDir.normalized);
     }
 
     void OnDieListener()
@@ -77,15 +93,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     void RangedAttack()
     {
         if (_currRangedTime >= _rangedAttackRate)
         {
-            _rangedAttack.Attack(transform.rotation);
-            _currMeleeTime = 0f;
+            _rangedAttack.Attack(_lookDir);
+            _currRangedTime = 0f;
         }
     }
-    
 
     private void OnDrawGizmos()
     {

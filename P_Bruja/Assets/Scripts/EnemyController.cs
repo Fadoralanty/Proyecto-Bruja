@@ -37,8 +37,9 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(time);
         _isStunned = false;
     }
-    private void Update()
+    private void FixedUpdate()
     {
+        if (Game_Manager.instance.isGamePaused) return;
         if (_isStunned) return;
         _currMeleeTime += Time.deltaTime;
         Vector2 diff = _target.position - transform.position;

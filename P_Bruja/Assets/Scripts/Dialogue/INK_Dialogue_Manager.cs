@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using Ink.Runtime;
 using TMPro;
 using UnityEngine;
@@ -56,7 +57,7 @@ public class INK_Dialogue_Manager : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && _currStory.currentChoices.Count == 0)
         {
             ContinueStory();
         }
