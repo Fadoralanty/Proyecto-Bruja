@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.10015053, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.2476306, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9713696, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.8207547, g: 0.4649383, b: 0.2206746, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -791,6 +791,7 @@ GameObject:
   - component: {fileID: 2843852268312410087}
   - component: {fileID: 5829072281077728178}
   - component: {fileID: 538575576067912869}
+  - component: {fileID: 9191321064859483352}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -881,3 +882,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &9191321064859483352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291541693633047289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d91c299c9c4e0242845757e8a570047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BattleHUD_Items:
+  - {fileID: 435241803}
+  moralityItems: []
