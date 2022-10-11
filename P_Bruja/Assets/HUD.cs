@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class HUD : MonoBehaviour
 {
     [SerializeField] private List<GameObject> BattleHUD_Items;
@@ -23,6 +22,7 @@ public class HUD : MonoBehaviour
         foreach (var item in items)
         {
             item.SetActive(setActive);
+            
         }
     }
 }

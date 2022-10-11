@@ -896,4 +896,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BattleHUD_Items:
   - {fileID: 435241803}
-  moralityItems: []
+  moralityItems:
+  - {fileID: 184181787}
+  - {fileID: 138260585}
