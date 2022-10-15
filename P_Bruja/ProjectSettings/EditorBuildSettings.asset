@@ -18,9 +18,9 @@ EditorBuildSettings:
     path: Assets/SCENES/Test Scenes/JulianTejo Combate.unity
     guid: 9716b823b37210e4087f8dcc5c221a32
   - enabled: 1
-    path: Assets/SCENES/Main Menu.unity
-    guid: d08732362a6f5c24094aa29b7e066ef8
-  - enabled: 1
     path: Assets/SCENES/Test Scenes/JulianTejo Tilemap.unity
     guid: 3d95f4b9875493844b614fee89d542b2
+  - enabled: 1
+    path: Assets/SCENES/Level julian tejo.unity
+    guid: 27bb5fd76f5164c499863c9d91a9f173
   m_configObjects: {}
