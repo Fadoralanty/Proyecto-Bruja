@@ -23,6 +23,7 @@ public class INK_Dialogue_Trigger : MonoBehaviour
     private void Update()
     {
         if (Game_Manager.instance.isGamePaused) return;
+        if (Game_Manager.instance.InCombat) return;
         if (_playerInRange && !INK_Dialogue_Manager.instance._isDialogueRunning)
         {
             _visualQue.SetActive(true);

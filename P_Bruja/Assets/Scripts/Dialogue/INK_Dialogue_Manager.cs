@@ -7,6 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
 public class INK_Dialogue_Manager : MonoBehaviour
 {
@@ -52,6 +53,7 @@ public class INK_Dialogue_Manager : MonoBehaviour
     private void Update()
     {
         //we only want to update if there is dialogue playing
+        if (Game_Manager.instance.InCombat) return;
         if (!_isDialogueRunning)
         {
             return;
@@ -82,12 +84,16 @@ public class INK_Dialogue_Manager : MonoBehaviour
         {
             StartCoroutine(ExitDialogueMode());
         }
+        
     }
     
     private IEnumerator ExitDialogueMode()
     {
         yield return new WaitForSeconds(0.2f);
-        
+        if (_currStory.variablesState.GetVariableWithName("Combate")?.ToString()=="true")
+        {
+            Game_Manager.instance.InCombat = true;
+        }
         _isDialogueRunning = false;
         _dialogueUI.SetActive(false);
         _dialogueText.text = "";
@@ -124,6 +130,9 @@ public class INK_Dialogue_Manager : MonoBehaviour
     {
         _currStory.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
+        int mor =int.Parse(_currStory.variablesState.GetVariableWithName("Moralidad")?.ToString());
+        Debug.Log(mor);
+        Game_Manager.instance._morality += mor;
     }
     private IEnumerator SelectFirstChoice()
     {

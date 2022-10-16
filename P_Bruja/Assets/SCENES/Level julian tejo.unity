@@ -257,6 +257,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15588350}
   m_CullTransparentMesh: 1
+--- !u!1 &90027882 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 138260585, guid: 6f1e96958588f5140805e17ec7b45e36, type: 3}
+  m_PrefabInstance: {fileID: 1918853349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &334437985 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2079966225, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
@@ -275,6 +280,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 161728461, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 558979539}
     - target: {fileID: 1181904653097643010, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2467,6 +2476,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 9191321064859483352, guid: 6f1e96958588f5140805e17ec7b45e36, type: 3}
+      propertyPath: moralityItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191321064859483352, guid: 6f1e96958588f5140805e17ec7b45e36, type: 3}
+      propertyPath: moralityItems.Array.data[0]
+      value: 
+      objectReference: {fileID: 90027882}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f1e96958588f5140805e17ec7b45e36, type: 3}
 --- !u!1 &1919113371

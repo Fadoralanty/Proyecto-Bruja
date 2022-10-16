@@ -86,7 +86,7 @@ public class EnemyController : MonoBehaviour
     
     void OnDieListener()
     {
-        Destroy(gameObject);
+        Game_Manager.instance.InCombat = false;
     }
 
     IEnumerator Wait(float time)
