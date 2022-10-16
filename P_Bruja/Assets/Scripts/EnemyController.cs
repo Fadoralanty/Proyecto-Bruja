@@ -43,6 +43,8 @@ public class EnemyController : MonoBehaviour
     {
         if (Game_Manager.instance.isGamePaused) return;
         if (_isStunned) return;
+        if (!Game_Manager.instance.InCombat) return;
+        
         _currMeleeTime += Time.deltaTime;
         Vector2 diff = _target.position - transform.position;
         float distance = diff.magnitude;
