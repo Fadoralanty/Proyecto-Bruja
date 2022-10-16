@@ -1058,11 +1058,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825450658}
   m_CullTransparentMesh: 1
---- !u!1 &946560032 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5241988976485538352, guid: acd61403ebf1aba4f89a8540e79e3eda, type: 3}
-  m_PrefabInstance: {fileID: 5241988975816980942}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1102576931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,25 +1958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91fca09c968c1e942b431d5f65d91ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1862869641 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5241988976270770732, guid: acd61403ebf1aba4f89a8540e79e3eda, type: 3}
-  m_PrefabInstance: {fileID: 5241988975816980942}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1862869642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862869641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c7e4581b8fc39a41b3504a386ef3264, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _visualQue: {fileID: 946560032}
-  inkJson: {fileID: 4900000, guid: 9a25b562bdac6f04ca6dd55081d08651, type: 3}
 --- !u!4 &1887674437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2853348631792066263, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
@@ -2649,6 +2625,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1862869642, guid: acd61403ebf1aba4f89a8540e79e3eda, type: 3}
+      propertyPath: inkJson
+      value: 
+      objectReference: {fileID: 4900000, guid: 0e846037222f9554ab91490d5f17b97c, type: 3}
     - target: {fileID: 5241988976270770728, guid: acd61403ebf1aba4f89a8540e79e3eda, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2698,5 +2678,5 @@ PrefabInstance:
       value: NPC INK
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5241988976270770733, guid: acd61403ebf1aba4f89a8540e79e3eda, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: acd61403ebf1aba4f89a8540e79e3eda, type: 3}

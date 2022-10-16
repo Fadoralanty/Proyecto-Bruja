@@ -8,6 +8,7 @@ public class Damageable : MonoBehaviour
 {
     [SerializeField] protected float _maxLife;
     [SerializeField] protected float _currentLife;
+    [SerializeField] Animator _anim;
     public float CurrentLife => _currentLife;
     public float MaxLife => _maxLife;
     public Action<float> onLifeChange;//HP y barra de vida
@@ -15,6 +16,7 @@ public class Damageable : MonoBehaviour
 
     protected virtual void Awake()
     {
+        _anim = GetComponent<Animator>();
         ResetValues();
     }
     
@@ -22,6 +24,7 @@ public class Damageable : MonoBehaviour
     {
         if (_currentLife > 0 )
         {
+            _anim.SetBool("Hit", true);
             _currentLife -= damage;
         }
         onLifeChange?.Invoke(_currentLife);

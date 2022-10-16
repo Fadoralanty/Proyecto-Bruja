@@ -13,6 +13,7 @@ public class EnemyController : MonoBehaviour
     private Movement _movement;
     private Damageable _damageable;
     private MeleeAttack _meleeAttack;
+    private Animator _anim;
     private bool _isStunned;
     
     private void Start()
@@ -20,6 +21,7 @@ public class EnemyController : MonoBehaviour
         _movement = GetComponent<Movement>();
         _meleeAttack = GetComponent<MeleeAttack>();
         _damageable = GetComponent<Damageable>();
+        _anim = GetComponent<Animator>();
         _damageable.onDie.AddListener(OnDieListener);
         _damageable.onLifeChange+=OnLifeChangeHandler;
         _currMeleeTime = 0f;
@@ -46,13 +48,17 @@ public class EnemyController : MonoBehaviour
         float distance = diff.magnitude;
         if (distance <= _detectionRange)
         {
+            _anim.SetBool("Attacking", false);
             _movement.Move(diff.normalized);
+            _anim.SetFloat("AnimVelX", diff.x);
+            _anim.SetFloat("AnimVelY", diff.y);
             if (distance <= _attackRange)
             {
                 if (_currMeleeTime >= _meleeAttackRate)
                 {
                     StopCoroutine(Wait(1f));
                     StartCoroutine(Wait(1f));
+                    _anim.SetBool("Attacking", true);
                     MeleeAttack(diff.normalized);
                     _currMeleeTime = 0f;
                 }
@@ -60,6 +66,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            _anim.SetBool("Hit", false);
             _movement.Move(Vector2.zero);
         }
     }
@@ -78,6 +85,7 @@ public class EnemyController : MonoBehaviour
     {
         _movement.canMove = false;
         yield return new WaitForSeconds(time);
+        _anim.SetBool("Hit", false);
         _movement.canMove = true;
     }
     
