@@ -2410,7 +2410,7 @@ Animator:
   m_GameObject: {fileID: 2024525711}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 15add06605d8a58419501da8d9d42073, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8ffa0c5cd155b3946aa70af3c30fd62b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2628,6 +2628,10 @@ PrefabInstance:
       propertyPath: _anim
       value: 
       objectReference: {fileID: 1699405420}
+    - target: {fileID: 2278110276243933497, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87bfad6f9823af34785687e07de88d05, type: 2}
     - target: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_Name
       value: Player
