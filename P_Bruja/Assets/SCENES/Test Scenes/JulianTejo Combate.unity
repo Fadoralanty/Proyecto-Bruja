@@ -2084,6 +2084,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655352076}
   m_CullTransparentMesh: 1
+--- !u!95 &1699405420 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2278110276243933497, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+  m_PrefabInstance: {fileID: 2853348633224506483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1731559618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2390,6 +2395,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2024525711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1181904653097643033, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+  m_PrefabInstance: {fileID: 1181904653095851670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2024525720
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024525711}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15add06605d8a58419501da8d9d42073, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2126042611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2578,6 +2607,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1181904653097643012, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: _anim
+      value: 
+      objectReference: {fileID: 2024525720}
     - target: {fileID: 1181904653097643033, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -2591,6 +2624,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2079966225, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: _anim
+      value: 
+      objectReference: {fileID: 1699405420}
     - target: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_Name
       value: Player

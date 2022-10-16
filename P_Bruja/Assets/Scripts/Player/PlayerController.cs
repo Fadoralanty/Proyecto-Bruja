@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             _isAttacking = false;
+            _anim.SetBool("Attacking", false);
         }     
         
         if (Input.GetButtonDown("Fire2"))
@@ -71,8 +72,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-         if (_moveDir != Vector2.zero)
-              _movement.Move(_moveDir.normalized);
+        if (_moveDir != Vector2.zero)
+        {
+            _anim.SetBool("Hit", false);
+            _movement.Move(_moveDir.normalized);
+        }
+        else _anim.SetBool("Hit", false);
     }
 
     void OnDieListener()
@@ -88,6 +93,7 @@ public class PlayerController : MonoBehaviour
         if (_currMeleeTime >= _meleeAttackRate)
         {
             _isAttacking = true;
+            _anim.SetBool("Attacking", true);
             _meleeAttack.Attack(_lookDir);
             _currMeleeTime = 0f;
         }
