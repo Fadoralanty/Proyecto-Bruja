@@ -68,7 +68,7 @@ public class INK_Dialogue_Manager : MonoBehaviour
         _currStory = new Story(inkJson.text);
         _isDialogueRunning = true;
         _dialogueUI.SetActive(true);
-       // ContinueStory();
+        //ContinueStory();
     }
 
     void ContinueStory()

@@ -9,13 +9,15 @@ public class INK_Dialogue_Trigger : MonoBehaviour
     [SerializeField] private GameObject _visualQue;
     
     [Header("INK .json File")] 
-    [SerializeField] private TextAsset inkJson;
-    
+    [SerializeField] private TextAsset[] inkJson;
+
+    private int index;
     private bool _playerInRange;
     private void Awake()
     {
         _playerInRange = false;
         _visualQue.SetActive(false);
+        index = 0;
     }
 
     private void Update()
@@ -24,10 +26,11 @@ public class INK_Dialogue_Trigger : MonoBehaviour
         if (_playerInRange && !INK_Dialogue_Manager.instance._isDialogueRunning)
         {
             _visualQue.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && index < inkJson.Length)
             {
                 //iniciar dialogo
-                INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson); 
+                INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson[index]);
+                index++;
             }
         }
         else
