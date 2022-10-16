@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
             _lookDir = _moveDir;
         }
         
+        if (!Game_Manager.instance.InCombat) return;
         if (Input.GetButtonDown("Fire1"))
         {
             MeleeAttack();
@@ -72,6 +73,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (Game_Manager.instance.isGamePaused) return;
         if (_moveDir != Vector2.zero)
         {
             _anim.SetBool("Hit", false);

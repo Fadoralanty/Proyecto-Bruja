@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float _detectionRange; 
     [SerializeField] private float _attackRange; 
     [SerializeField] private float _meleeAttackRate;
+    private Rigidbody2D myRigidbody2D;
     private float _currMeleeTime;
     private Movement _movement;
     private Damageable _damageable;
@@ -22,12 +23,15 @@ public class EnemyController : MonoBehaviour
         _meleeAttack = GetComponent<MeleeAttack>();
         _damageable = GetComponent<Damageable>();
         _anim = GetComponent<Animator>();
+        myRigidbody2D = GetComponent<Rigidbody2D>();
+        myRigidbody2D.bodyType = RigidbodyType2D.Static;
         _damageable.onDie.AddListener(OnDieListener);
         _damageable.onLifeChange+=OnLifeChangeHandler;
         _currMeleeTime = 0f;
+        
     }
 
-    void OnLifeChangeHandler(float life)
+    private void OnLifeChangeHandler(float life)
     {
         StopAllCoroutines();
         StartCoroutine(Stun(1f));
@@ -42,7 +46,11 @@ public class EnemyController : MonoBehaviour
     private void FixedUpdate()
     {
         if (Game_Manager.instance.isGamePaused) return;
+        if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
         if (_isStunned) return;
+        if (!Game_Manager.instance.InCombat) return;
+        
+        myRigidbody2D.bodyType = RigidbodyType2D.Dynamic;
         _currMeleeTime += Time.deltaTime;
         Vector2 diff = _target.position - transform.position;
         float distance = diff.magnitude;
@@ -78,7 +86,7 @@ public class EnemyController : MonoBehaviour
     
     void OnDieListener()
     {
-        Destroy(gameObject);
+        Game_Manager.instance.InCombat = false;
     }
 
     IEnumerator Wait(float time)
