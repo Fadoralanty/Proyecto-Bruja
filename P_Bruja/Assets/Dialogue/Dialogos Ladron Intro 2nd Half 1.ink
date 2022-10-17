@@ -8,13 +8,6 @@ Ladron: Noooo, por favor no, llévame a cualquier lugar en el mundo que no sea e
 Richard: ¿Se encuentra bien señor? La juventud hoy en día ya no respeta a nadie ni nada.
 
 Viejo: Gracias por preguntar joven, por suerte el ladrón estaba tan asustado que puso el lomo del cuchillo en mi garganta en vez del filo así que no tengo cortes ni golpes, aunque el susto fue grande, hace un año que no vivo una situación así de fuerte.
-
-Viejo: Ah, por cierto, gracias por el bolso.
-
-Viejo: Ahora que te veo me resultas familiar muchacho, ¿nos conocemos de algo?.
-
-Richard: No, para nada, me debe de confundir con otra persona. En fin, me alegro que se encuentre bien, ande con cuidado.
-"Good" Outcome.
  
 * [Apalear al ladrón (dejandolo vivo)]
 Richard: Parece ser que no aprendes la lección, escoria. ¡¿Necesitas que te recuerde tu lugar, basura?!
