@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _meleeAttackRate;
     [SerializeField] private RangedAttack _rangedAttack;
     [SerializeField] private float _rangedAttackRate;
+    private InventorySimple inventory;
+    [SerializeField] private UI_Inventory uiInventory;
     private Damageable _damageable;
     private Movement _movement;
     private Vector2 _moveDir;
@@ -24,6 +26,9 @@ public class PlayerController : MonoBehaviour
     {
         _currMeleeTime = 0;
         _currRangedTime = 0;
+        inventory = new InventorySimple();
+        uiInventory.SetPlayer(this);
+        uiInventory.SetInventory(inventory);
     }
 
     private void Start()
@@ -34,6 +39,7 @@ public class PlayerController : MonoBehaviour
         _rangedAttack = GetComponent<RangedAttack>();
         _damageable = GetComponent<Damageable>();
         _damageable.onDie.AddListener(OnDieListener);
+
     }
     
     private void Update()
@@ -47,6 +53,7 @@ public class PlayerController : MonoBehaviour
         _moveDir = new Vector2(hor, ver);
         _anim.SetFloat("AnimVelX", hor);
         _anim.SetFloat("AnimVelY", ver);
+        _anim.SetBool("Attacking", false);
 
         if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
         if (_moveDir != Vector2.zero)
@@ -70,7 +77,10 @@ public class PlayerController : MonoBehaviour
             RangedAttack();
         }
     }
-
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
     private void FixedUpdate()
     {
         if (Game_Manager.instance.isGamePaused) return;
@@ -110,7 +120,16 @@ public class PlayerController : MonoBehaviour
             _currRangedTime = 0f;
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        ItemWorld itemWorld = collision.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            //Touching Item
+            inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
+        }
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.white;

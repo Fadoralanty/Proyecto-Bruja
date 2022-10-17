@@ -1,4 +1,7 @@
+ VAR Moralidad = 0
+
 * [Incapacitar al ladrón]
+~ Moralidad = 50
 Richard: Eso fue todo? Para portar un cuchillo no eres muy hábil. Ahora veamos si la estación de policía local tiene un espacio en alguna celda del calabozo para ti.
 
 Ladron: Noooo, por favor no, llévame a cualquier lugar en el mundo que no sea este pueblo, debo escapar de aquí, no quiero ser el próximo en desaparecer.
@@ -10,6 +13,7 @@ Richard: ¿Se encuentra bien señor? La juventud hoy en día ya no respeta a nad
 Viejo: Gracias por preguntar joven, por suerte el ladrón estaba tan asustado que puso el lomo del cuchillo en mi garganta en vez del filo así que no tengo cortes ni golpes, aunque el susto fue grande, hace un año que no vivo una situación así de fuerte.
  
 * [Apalear al ladrón (dejandolo vivo)]
+~ Moralidad = -50
 Richard: Parece ser que no aprendes la lección, escoria. ¡¿Necesitas que te recuerde tu lugar, basura?!
 
 Ladron: Jajajajaja, no eres mas que un cobarde, muy valiente amenzando a alguien derribado, esa valentia es tan vacia como tus palabras. 
@@ -29,5 +33,6 @@ Viejo:¿Espera, acaso te conozco?
 Richard: No, jamás lo he visto, ahora déjeme que debo llevarme a este sujeto, en el calabozo de la estación de policia le tendrán alguna esquina sucia para dejarlo.
 "Bad" Outcome.
 -> END
+
 
 

@@ -5,55 +5,62 @@ using UnityEngine;
 //https://www.youtube.com/watch?v=_nRzoTzeyxU&list=WL&index=22&t=4s
 public class NpcDialogueTrigger : MonoBehaviour
 {
-    public Dialogue _dialogue;
-    private bool isPlayerInRange;
-    private bool isDialogueStarted;
-    private bool isDialogueFinished;
+    [Header("Visual Que")]
+    [SerializeField] private GameObject _visualQue;
 
-    public GameObject speechBubbleSprite;
-    
+    [Header("INK .json File")]
+    [SerializeField] private TextAsset[] inkJson;
 
-    public void TriggerDialogue()
+    private int index;
+    private bool _playerInRange;
+    private bool haveMorral = false;
+
+    private void Awake()
     {
-        Dialogue_Manager.instance.StartDialogue(_dialogue);
+        _playerInRange = false;
+        _visualQue.SetActive(false);
+        index = 0;
     }
-
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Game_Manager.instance.isGamePaused) return;
+        if (Game_Manager.instance.InCombat) return;
+        if (_playerInRange && !INK_Dialogue_Manager.instance._isDialogueRunning)
         {
-            if (isDialogueStarted)
+            _visualQue.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E) && index < inkJson.Length && haveMorral == true)
             {
-                Dialogue_Manager.instance.DisplayNextSentence();
+                //iniciar dialogo
+                INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson[index]);
+                index++;
             }
-            if (isPlayerInRange && !isDialogueStarted)
-            {
-                TriggerDialogue();
-                isDialogueStarted = true;
-            }
-
+        }
+        else
+        {
+            _visualQue.SetActive(false);
         }
     }
-
     private void OnTriggerEnter2D(Collider2D col)
     {
+        ItemWorld itemWorld = col.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            //Touching Item
+            haveMorral = true;
+            Debug.Log("hola");
+            itemWorld.DestroySelf();
+        }
         if (col.CompareTag("Player"))
         {
-            isPlayerInRange = true;
-
+            _playerInRange = true;
         }
-        speechBubbleSprite.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerInRange = false;
-            isDialogueStarted = false; // Permite reiniciar el dialogo cuando te alejas
-            Dialogue_Manager.instance.CloseDialogue(); //Cierra el dialogo cuando te alejas
+            _playerInRange = false;
         }
-        speechBubbleSprite.SetActive(false);
     }
-    
 }
