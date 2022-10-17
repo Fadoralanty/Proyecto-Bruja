@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         //play die animation
         //restrict input
         //destroy or deactivate gameObject
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
     void MeleeAttack()
     {

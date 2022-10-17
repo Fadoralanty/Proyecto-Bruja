@@ -45,6 +45,7 @@ public class EnemyController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (Game_Manager.instance.isGameOver) return;
         if (Game_Manager.instance.isGamePaused) return;
         if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
         if (_isStunned) return;

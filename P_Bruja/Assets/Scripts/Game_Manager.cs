@@ -8,7 +8,10 @@ public class Game_Manager : MonoBehaviour
     public static Game_Manager instance;
     [Range(-100, 100)] public int _morality;
     public bool isGamePaused;
+    public bool isGameOver;
     public bool InCombat;
+    [SerializeField] private Damageable playerDamageable;
+    [SerializeField] private GameObject GameOverScreen;
     private void Awake()
     {
         if (instance==null)
@@ -20,9 +23,21 @@ public class Game_Manager : MonoBehaviour
             Destroy(this);
         }
 
+        isGameOver = false;
         isGamePaused = false;
     }
 
+    private void Start()
+    {
+        playerDamageable.onDie.AddListener(OnPlayerDieListener);
+        GameOverScreen.SetActive(false);
+    }
+
+    void OnPlayerDieListener()
+    {
+        GameOverScreen.SetActive(true);
+        isGameOver = true;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
