@@ -48,8 +48,12 @@ public class EnemyController : MonoBehaviour
         if (Game_Manager.instance.isGamePaused) return;
         if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
         if (_isStunned) return;
-        if (!Game_Manager.instance.InCombat) return;
-        
+        if (!Game_Manager.instance.InCombat)
+        {
+            myRigidbody2D.bodyType = RigidbodyType2D.Static;
+            return;
+        }
+
         myRigidbody2D.bodyType = RigidbodyType2D.Dynamic;
         _currMeleeTime += Time.deltaTime;
         Vector2 diff = _target.position - transform.position;
