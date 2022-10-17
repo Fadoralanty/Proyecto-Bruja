@@ -5,5 +5,7 @@ Gracias por preguntar joven, por suerte el ladrón estaba tan asustado que puso 
 -> 2nd_dialogue_old_good
 
 === 2nd_dialogue_old_good ===
+Ah, por cierto, gracias por el bolso.
 Ahora que te veo me resultas familiar muchacho, ¿nos conocemos de algo?.
+"Good" Outcome.
 -> END

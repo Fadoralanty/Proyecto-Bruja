@@ -10,5 +10,6 @@ Ya tuvo suficiente, si lo sigues golpeando morirá
 
 === 3rd_dialogue_old_bad ===
 ¿Espera, acaso te conozco?
+"Bad" Outcome.
 -> END
 
