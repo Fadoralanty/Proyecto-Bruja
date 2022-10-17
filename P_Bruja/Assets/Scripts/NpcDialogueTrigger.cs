@@ -9,7 +9,7 @@ public class NpcDialogueTrigger : MonoBehaviour
     private bool isPlayerInRange;
     private bool isDialogueStarted;
     private bool isDialogueFinished;
-
+    private bool haveMorral = false;
     public GameObject speechBubbleSprite;
     
 
@@ -20,7 +20,7 @@ public class NpcDialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && haveMorral == true)
         {
             if (isDialogueStarted)
             {
@@ -37,6 +37,13 @@ public class NpcDialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        ItemWorld itemWorld = col.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            //Touching Item
+            haveMorral = true;
+            itemWorld.DestroySelf();
+        }
         if (col.CompareTag("Player"))
         {
             isPlayerInRange = true;
