@@ -29,7 +29,8 @@ public class EnemyController : MonoBehaviour
         _damageable.onDie.AddListener(OnDieListener);
         _damageable.onLifeChange+=OnLifeChangeHandler;
         _currMeleeTime = 0f;
-        
+        _attackRange = _meleeAttack.Range;
+
     }
 
     private void OnLifeChangeHandler(float life)

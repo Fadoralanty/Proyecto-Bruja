@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         _movement = GetComponent<Movement>();
         _anim = GetComponent<Animator>();
-        _meleeAttack = GetComponent<MeleeAttack>();
+        if (!_meleeAttack) _meleeAttack = GetComponent<MeleeAttack>();
         _rangedAttack = GetComponent<RangedAttack>();
         _damageable = GetComponent<Damageable>();
         _damageable.onDie.AddListener(OnDieListener);
@@ -132,10 +132,10 @@ public class PlayerController : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.white;
+        Gizmos.color=Color.white;
         Gizmos.DrawLine(transform.position, (Vector2)transform.position + _lookDir);
-        
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireCube((Vector2)transform.position + _lookDir, Vector2.one);
+        Vector3 center = (Vector2) transform.position + _lookDir * _meleeAttack.Range;
+        Gizmos.DrawWireCube(((Vector2) transform.position + _lookDir) * _meleeAttack.Range, _meleeAttack.Size);
     }
 }

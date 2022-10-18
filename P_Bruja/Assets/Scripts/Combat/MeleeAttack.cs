@@ -6,16 +6,21 @@ using UnityEngine;
 public class MeleeAttack : MonoBehaviour
 {
     [SerializeField] private float _damage;
+    public float Range => _range;
+    [SerializeField] private float _range = 1;
+    public Vector2 Size => _size;
+    [SerializeField] private Vector2 _size = Vector2.one;
     [SerializeField] private LayerMask _targetMask;
     [SerializeField] private bool _hasKnockback;
     [SerializeField] private float _knockback = 2;
     [SerializeField] private float _knockbackTime = 0.2f;
     private Vector2 center;
-    private Vector2 attackDir;
+    public Vector2 attackDir;
     public void Attack(Vector2 dir)
     {
-        attackDir = (Vector2)transform.position + dir;
-        Collider2D[] hitTargets = Physics2D.OverlapBoxAll(attackDir,  Vector2.one, 0,_targetMask);
+        attackDir = (Vector2)transform.position + dir * _range;
+        Collider2D[] hitTargets = Physics2D.OverlapBoxAll( attackDir,  _size, 0,_targetMask);
+        Debug.DrawLine(transform.position,attackDir*_range);
         foreach (Collider2D hit in hitTargets)
         {
             hit.GetComponent<Damageable>().GetDamage(_damage);
@@ -34,5 +39,5 @@ public class MeleeAttack : MonoBehaviour
         yield return new WaitForSeconds(_knockbackTime);
         rb.velocity = Vector2.zero;
     }
-
+    
 }
