@@ -124,10 +124,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lookDir: {x: 0, y: 0}
-  _meleeAttack: {fileID: 0}
+  _meleeAttack: {fileID: 6374350503052284268}
   _meleeAttackRate: 0.25
   _rangedAttack: {fileID: 0}
   _rangedAttackRate: 0.25
+  uiInventory: {fileID: 0}
 --- !u!114 &2853348631792066260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
+  _range: 0.5
+  _size: {x: 0.5, y: 1}
   _targetMask:
     serializedVersion: 2
     m_Bits: 64

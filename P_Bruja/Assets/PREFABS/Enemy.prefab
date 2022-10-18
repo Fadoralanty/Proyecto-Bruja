@@ -361,8 +361,6 @@ GameObject:
   - component: {fileID: 1450663847711777093}
   - component: {fileID: 1680998882933594127}
   - component: {fileID: 2024525720}
-  - component: {fileID: 8765429740867770019}
-  - component: {fileID: 1068724442311434635}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
@@ -383,6 +381,7 @@ Transform:
   m_Children:
   - {fileID: 1754619574}
   - {fileID: 4602169244078624157}
+  - {fileID: 350919256535584546}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -468,7 +467,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.006643057, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -479,7 +478,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32240152, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &1181904653097643014
 Rigidbody2D:
@@ -518,6 +517,9 @@ MonoBehaviour:
   _detectionRange: 3.46
   _attackRange: 1.54
   _meleeAttackRate: 1
+  item:
+    itemType: 0
+    amount: 1
 --- !u!114 &1450663847711777093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,12 +547,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
+  _range: 1.04
+  _size: {x: 0.5, y: 1}
   _targetMask:
     serializedVersion: 2
     m_Bits: 128
   _hasKnockback: 1
   _knockback: 3
   _knockbackTime: 0.2
+  attackDir: {x: 0, y: 0}
 --- !u!95 &2024525720
 Animator:
   serializedVersion: 3
@@ -570,13 +575,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8765429740867770019
+--- !u!1 &7871037309933939284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 350919256535584546}
+  - component: {fileID: 8069034498113542270}
+  - component: {fileID: 3276496069824112002}
+  m_Layer: 0
+  m_Name: DialogueTrigger
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &350919256535584546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871037309933939284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1181904653097643010}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8069034498113542270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1181904653097643033}
+  m_GameObject: {fileID: 7871037309933939284}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c7e4581b8fc39a41b3504a386ef3264, type: 3}
@@ -585,14 +622,14 @@ MonoBehaviour:
   _visualQue: {fileID: 8262959742932330742}
   inkJson:
   - {fileID: 4900000, guid: 9a25b562bdac6f04ca6dd55081d08651, type: 3}
-  - {fileID: 4900000, guid: 0e846037222f9554ab91490d5f17b97c, type: 3}
---- !u!58 &1068724442311434635
+  - {fileID: 4900000, guid: 4ed5e035a58215346a1b09e6b4519d5f, type: 3}
+--- !u!58 &3276496069824112002
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1181904653097643033}
+  m_GameObject: {fileID: 7871037309933939284}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
