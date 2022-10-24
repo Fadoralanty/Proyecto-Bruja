@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private float _currMeleeTime;
     private float _currRangedTime;
     private bool _isAttacking;
+    private bool _isUiInventoryActivate = false;
     private void Awake()
     {
         _currMeleeTime = 0;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
         inventory = new InventorySimple();
         uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
+        uiInventory.DeactivateUI();
     }
 
     private void Start()
@@ -55,6 +57,11 @@ public class PlayerController : MonoBehaviour
         _anim.SetFloat("AnimVelY", ver);
         _anim.SetBool("Attacking", false);
 
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            _isUiInventoryActivate = !_isUiInventoryActivate;
+            ActivateUI();
+        }
         if (INK_Dialogue_Manager.instance._isDialogueRunning) return;
         if (_moveDir != Vector2.zero)
         {
@@ -75,6 +82,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             RangedAttack();
+        }
+    }
+    public void ActivateUI()
+    {
+        if(_isUiInventoryActivate == true)
+        {
+            uiInventory.ActivateUI();
+        }
+        if (_isUiInventoryActivate == false)
+        {
+            uiInventory.DeactivateUI();
         }
     }
     public Vector3 GetPosition()
@@ -126,7 +144,7 @@ public class PlayerController : MonoBehaviour
         if (itemWorld != null)
         {
             //Touching Item
-            inventory.AddItem(itemWorld.GetItem());
+            inventory.AddItem(itemWorld.GetItem(),19);
             itemWorld.DestroySelf();
         }
     }
