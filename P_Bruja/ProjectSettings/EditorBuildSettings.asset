@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SCENES/JulianTejo.unity
-    guid: 175134a88cf3c834b83f20d10b33b646
+    path: Assets/SCENES/MainMenu.unity
+    guid: 6535407247a0e8d4bb0ba7ea9bd81928
   - enabled: 1
-    path: Assets/SCENES/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/SCENES/Level julian tejo.unity
+    guid: 27bb5fd76f5164c499863c9d91a9f173
   m_configObjects: {}

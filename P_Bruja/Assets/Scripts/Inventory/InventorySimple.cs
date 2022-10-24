@@ -11,13 +11,10 @@ public class InventorySimple
     {
         itemList = new List<Item>();
     }
-    public void AddItem(Item item, int limit)
-    {
-        if (itemList.Count <= limit)
-        {
-            itemList.Add(item);
-            OnItemListChanged?.Invoke(this, EventArgs.Empty);
-        }
+    public void AddItem(Item item)
+    {    
+        itemList.Add(item);
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public void RemoveItem(Item item)
