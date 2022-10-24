@@ -25,7 +25,14 @@ public class UI_Inventory : MonoBehaviour
         inventory.OnItemListChanged += Inventory_OnItemListChanged;
         RefreshInventoryItems();
     }
-
+    public void ActivateUI ()
+    {
+        gameObject.SetActive(true);
+    }
+    public void DeactivateUI()
+    {
+        gameObject.SetActive(false);
+    }
     private void Inventory_OnItemListChanged(object sender, System.EventArgs e)
     {
         RefreshInventoryItems();

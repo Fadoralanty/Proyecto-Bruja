@@ -983,17 +983,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 68909312}
     m_Modifications:
-    - target: {fileID: 8004970296273651917, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 40928752b9fc0c6458bf65d46c33dcef, type: 3}
     - target: {fileID: 8004970297156315916, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
       propertyPath: m_Name
       value: UI_Inventory
-      objectReference: {fileID: 0}
-    - target: {fileID: 8004970297156315916, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8004970297156315917, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
       propertyPath: m_Pivot.x
@@ -1078,18 +1070,6 @@ PrefabInstance:
     - target: {fileID: 8004970297156315917, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8004970298179020669, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
-      propertyPath: m_Color.b
-      value: 0.33506584
-      objectReference: {fileID: 0}
-    - target: {fileID: 8004970298179020669, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
-      propertyPath: m_Color.g
-      value: 0.33506584
-      objectReference: {fileID: 0}
-    - target: {fileID: 8004970298179020669, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
-      propertyPath: m_Color.r
-      value: 0.49056602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88135e14e5f4db04480da6858eb0f6f4, type: 3}
@@ -1409,6 +1389,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 250272571568736022, guid: e2367f1b1f578c743965aea0761defd0, type: 3}
+      propertyPath: itemWorld
+      value: 
+      objectReference: {fileID: 577019977210836266, guid: 2ed42a670c4cba749954e83be9288397, type: 3}
     - target: {fileID: 250272571568736022, guid: e2367f1b1f578c743965aea0761defd0, type: 3}
       propertyPath: morralSprite
       value: 
