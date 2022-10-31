@@ -153,7 +153,7 @@ public class PlayerController : MonoBehaviour
         Gizmos.color=Color.white;
         Gizmos.DrawLine(transform.position, (Vector2)transform.position + _lookDir);
         Gizmos.color = Color.blue;
-        Vector3 center = (Vector2) transform.position + _lookDir * _meleeAttack.Range;
-        Gizmos.DrawWireCube(((Vector2) transform.position + _lookDir) * _meleeAttack.Range, _meleeAttack.Size);
+        Vector2 center = (Vector2) transform.position + _lookDir * _meleeAttack.Range;
+        Gizmos.DrawWireCube(center, _meleeAttack.Size);
     }
 }
