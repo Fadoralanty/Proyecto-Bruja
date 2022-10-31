@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TILES POLICIA 2_21
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -5817319594729958883, guid: 11d6bc178f4ee6f4194db923e27fcad3, type: 3}
+  m_Sprite: {fileID: -5817319594729958883, guid: 96ad1082e9af9834ca3e6f6b4ade951f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
