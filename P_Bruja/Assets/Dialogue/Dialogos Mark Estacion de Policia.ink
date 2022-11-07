@@ -11,16 +11,7 @@ M: Ojalá la cosa fuera tan sencilla. Aún hay más, en coincidencia con la desa
 R: ¿El cura?, ¿tuviste una confesión y ahora son amigos?
 M: (Entre Risas) Pfff, si claro, pero no es el caso. Este domingo durante la misa, una persona vomitó un LIQUIDO NEGRO Y COMENZÓ A GOLPEAR A LA GENTE inexplicablemente, luego de interferir y reducirlo, el cura no quedó muy complacido con mis acciones.
 R: Bueno, a lo mejor debiste explicarle que solo con rezos ese tipo no se iba a calmar.
-M: En fin, ya quedó atrás, ahora lo importante son los desaparecidos, ¿te importaría acompañarme afuera?
-M: Por cierto Richard, ¿has tenido tiempo de instalarte en algún lado?
-R: Pues no, apenas llegué y como viste venía con las manos ocupadas
-M: Que mal, si quieres puedes quedarte en casa de mi madre, ella ya ha pasado a mejor vida y me dejó la casa. Está bastante limpia y ordenada. Además, tendrás tiempo de recorrer el pueblo. Yo me dirigía a hablar con el cura debido a que parece que han habido más casos raros, si quieres puedes acompañarme y de paso te cuento un poco sobre el pueblo.
-*[Ir a descansar y pasar mas tarde]
-R: Gracias por la oferta, pero prefiero ir a descansar un poco y comenzar mañana, además, ya se está poniendo oscuro y no creo que pueda averiguar mucho a esta hora.
-M: Cómo gustes, si necesitas algo, puedes llamarme cuándo sea. La casa de mi madre no está lejos de aquí, la reconocerás fácilmente por su techo rojo y las flores blancas en la entrada. (Con la voz un poco más baja) La llave está bajo la maceta derecha.
-R: Excelente, nos vemos mañana.
-M: De acuerdo, seguro pase por ti temprano, nos vemos entonces.
-*[Ir con Mark]
-R: Será mejor que vaya contigo, la relación entre las desapariciones y las enfermedades raras puede ser más grande de lo que creemos, si lo consultamos con el cura quizá se le ocurra algo. Además, aprovecharé para conocerlo.
-M: Buena idea, será mejor que vayamos, se está haciendo tarde.
+M: Puede ser. Por cierto, ya que estamos hablando de la iglesia, iba a ir hacia allí para conversar con el cura y ver si mas casos extraños ocurrieron, o más importante quizá, si se supo algo sobre los desaparecidos. Luego de aquel incidente que te comenté, las personas han entrado en pánico y ahora frencuentan mucho la iglesia, sería bueno que vengas conmigo a conocer al cura, y quizá, saber algo mas de lo que ocurre.
+R: Como siempre tan perspicaz, justo pensaba en ir a hablar con el cura de todos modos, esa historia suena a que tendremos mas problemas que unos saqueadores desaparecidos, y ahora que lo pienso, ya deben de ser cerca de las 6 de la tarde, será mejor que vayamos pronto.
+M:  Pues no perdamos tiempo, mi hija me espera en casa y con el pueblo así no quiero dejarla sola mucho tiempo. 
     -> END

@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949b298fc49de1f49b4f6de160b490dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemWorld: {fileID: 577019977210836266, guid: 2ed42a670c4cba749954e83be9288397, type: 3}
+  itemWorld: {fileID: 577019977210836266, guid: 2e313d720e74a5a4999864d9203b4c52, type: 3}
   morralSprite: {fileID: 21300000, guid: 40928752b9fc0c6458bf65d46c33dcef, type: 3}
 --- !u!4 &374337162
 Transform:
