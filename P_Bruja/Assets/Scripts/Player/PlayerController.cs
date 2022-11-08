@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float _rangedAttackRate;
     private InventorySimple inventory;
     [SerializeField] private UI_Inventory uiInventory;
+    public Damageable Damageable => _damageable;
     private Damageable _damageable;
+
+
     private Movement _movement;
     private Vector2 _moveDir;
     private Animator _anim;

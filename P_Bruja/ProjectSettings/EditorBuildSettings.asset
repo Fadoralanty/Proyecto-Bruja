@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SCENES/Level julian tejo.unity
     guid: 27bb5fd76f5164c499863c9d91a9f173
+  - enabled: 1
+    path: Assets/SCENES/Estacion de policia.unity
+    guid: 98fe37c20670b834fa5634969b660b91
   m_configObjects: {}

@@ -45,3 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _morality: 0
   isGamePaused: 0
+  isGameOver: 0
+  InCombat: 0
+  playerDamageable: {fileID: 0}
+  player: {fileID: 0}
+  GameOverScreen: {fileID: 0}
