@@ -45,6 +45,7 @@ public class DataPersistanceManager : MonoBehaviour
     }    
     public void OnSceneUnloaded(Scene scene)
     {
+        
     }
     private void Start()
     {
