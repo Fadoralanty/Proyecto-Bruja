@@ -15,7 +15,7 @@ public class ItemWorld : MonoBehaviour
 
     public static ItemWorld DropItem(Vector3 dropPosition,Item item)
     {
-        ItemWorld itemWorld = SpawnItemWorld(dropPosition + new Vector3(3,0,0), item);
+        ItemWorld itemWorld = SpawnItemWorld(dropPosition + new Vector3(1,0,0), item);
         //itemWorld.GetComponent<Rigidbody2D>().AddForce(dropPosition + new Vector3(2, 0, 0), ForceMode2D.Impulse);
         return itemWorld;
     }
@@ -33,6 +33,7 @@ public class ItemWorld : MonoBehaviour
     {
         this.item = item;
         spriteRenderer.sprite = item.GetSprite();
+        gameObject.tag = item.GetTag();
     }
     public Item GetItem()
     {

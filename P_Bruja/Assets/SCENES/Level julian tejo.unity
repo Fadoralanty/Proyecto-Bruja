@@ -346,6 +346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3276496069824112002, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
 --- !u!1 &505316046
@@ -936,6 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Estacion de policia
+  reaadyToGO: 0
 --- !u!4 &725190969
 Transform:
   m_ObjectHideFlags: 0
@@ -1863,6 +1868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3057233812138788816, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: changeScenes
+      value: 
+      objectReference: {fileID: 725190968}
     - target: {fileID: 3771255779691304513, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -1870,6 +1879,10 @@ PrefabInstance:
     - target: {fileID: 3771255779691304523, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: m_Name
       value: NPC INK Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771255779691304525, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: m_Radius
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3771255779691304527, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: m_RootOrder

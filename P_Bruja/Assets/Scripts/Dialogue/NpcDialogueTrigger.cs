@@ -13,7 +13,9 @@ public class NpcDialogueTrigger : MonoBehaviour
 
     private int index;
     private bool _playerInRange;
-    private bool haveMorral = false;
+    public bool haveMorral = false;
+    [SerializeField] private ChangeScenes changeScenes;
+    [SerializeField] private string _itemTag = "Morral";
 
     private void Awake()
     {
@@ -45,10 +47,13 @@ public class NpcDialogueTrigger : MonoBehaviour
         ItemWorld itemWorld = col.GetComponent<ItemWorld>();
         if (itemWorld != null)
         {
-            //Touching Item
-            haveMorral = true;
-            Debug.Log("hola");
-            itemWorld.DestroySelf();
+            if (col.CompareTag(_itemTag))
+            {
+                //Touching Item
+                haveMorral = true;
+                changeScenes.reaadyToGO = true;
+                itemWorld.DestroySelf();
+            }
         }
         if (col.CompareTag("Player"))
         {

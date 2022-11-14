@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class ChangeScenes : MonoBehaviour
 {
     [SerializeField] private string _sceneName;
-
+    public bool reaadyToGO;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.CompareTag("Player") && reaadyToGO == true)
         {
             SceneManager.LoadScene(_sceneName);
         }
