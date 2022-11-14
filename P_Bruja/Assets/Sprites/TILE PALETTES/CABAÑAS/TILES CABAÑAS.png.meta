@@ -1,0 +1,828 @@
+fileFormatVersion: 2
+guid: cc801661cedd0bc4b80e192c545209ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7376597330574768345
+    second: "TILES CABA\xD1AS_0"
+  - first:
+      213: -9168756897813029509
+    second: "TILES CABA\xD1AS_1"
+  - first:
+      213: 387637282064124555
+    second: "TILES CABA\xD1AS_2"
+  - first:
+      213: -2496682305682284956
+    second: "TILES CABA\xD1AS_3"
+  - first:
+      213: -8158202877278263485
+    second: "TILES CABA\xD1AS_4"
+  - first:
+      213: -8342603100006108938
+    second: "TILES CABA\xD1AS_5"
+  - first:
+      213: -7413660075361198153
+    second: "TILES CABA\xD1AS_6"
+  - first:
+      213: 8460986773633139732
+    second: "TILES CABA\xD1AS_7"
+  - first:
+      213: 9135117841652676093
+    second: "TILES CABA\xD1AS_8"
+  - first:
+      213: 541401904466522665
+    second: "TILES CABA\xD1AS_9"
+  - first:
+      213: -2910854345758028971
+    second: "TILES CABA\xD1AS_10"
+  - first:
+      213: 6847909923655865541
+    second: "TILES CABA\xD1AS_11"
+  - first:
+      213: 3534621803305307472
+    second: "TILES CABA\xD1AS_12"
+  - first:
+      213: -2463186410351560077
+    second: "TILES CABA\xD1AS_13"
+  - first:
+      213: -1253048922667518343
+    second: "TILES CABA\xD1AS_14"
+  - first:
+      213: -6092360845651307507
+    second: "TILES CABA\xD1AS_15"
+  - first:
+      213: -3531921612537976553
+    second: "TILES CABA\xD1AS_16"
+  - first:
+      213: 490862034032805827
+    second: "TILES CABA\xD1AS_17"
+  - first:
+      213: -7962388353788727970
+    second: "TILES CABA\xD1AS_18"
+  - first:
+      213: 7970291720095563667
+    second: "TILES CABA\xD1AS_19"
+  - first:
+      213: -8272612204730093724
+    second: "TILES CABA\xD1AS_20"
+  - first:
+      213: 832445316401462674
+    second: "TILES CABA\xD1AS_21"
+  - first:
+      213: 2799116756267067650
+    second: "TILES CABA\xD1AS_22"
+  - first:
+      213: 3949404726972307084
+    second: "TILES CABA\xD1AS_23"
+  - first:
+      213: -7839154119163706530
+    second: "TILES CABA\xD1AS_24"
+  - first:
+      213: -3842616442787758159
+    second: "TILES CABA\xD1AS_25"
+  - first:
+      213: 6264203358782884412
+    second: "TILES CABA\xD1AS_26"
+  - first:
+      213: -1625086911545797228
+    second: "TILES CABA\xD1AS_27"
+  - first:
+      213: -7468518975445672490
+    second: "TILES CABA\xD1AS_28"
+  - first:
+      213: 7869130061435264777
+    second: "TILES CABA\xD1AS_29"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_0"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1452
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7270ffb8fcf01a990800000000000000
+      internalID: -7376597330574768345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_1"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1452
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d11f9fd2802c080800000000000000
+      internalID: -9168756897813029509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_2"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1452
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a4123ed0a216500800000000000000
+      internalID: 387637282064124555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_3"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1452
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46eddc4cba00a5dd0800000000000000
+      internalID: -2496682305682284956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_4"
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1452
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347624605bd38ce80800000000000000
+      internalID: -8158202877278263485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_5"
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1452
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0301a7eae193c80800000000000000
+      internalID: -8342603100006108938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_6"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1452
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf9992d0736d1990800000000000000
+      internalID: -7413660075361198153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_7"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1388
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4148ea374a67b6570800000000000000
+      internalID: 8460986773633139732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_8"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1388
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df57a0de64576ce70800000000000000
+      internalID: 9135117841652676093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_9"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1388
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9227274e922738700800000000000000
+      internalID: 541401904466522665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_10"
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1388
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bc03815619a97d0800000000000000
+      internalID: -2910854345758028971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_11"
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1388
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c451653bc9a80f50800000000000000
+      internalID: 6847909923655865541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_12"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1388
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d0d598dcf7d0130800000000000000
+      internalID: 3534621803305307472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_13"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1324
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37afc63a20101ddd0800000000000000
+      internalID: -2463186410351560077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_14"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1324
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976773ec4a64c9ee0800000000000000
+      internalID: -1253048922667518343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_15"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1324
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04947fe616937ba0800000000000000
+      internalID: -6092360845651307507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_16"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1324
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 719262e91081cfec0800000000000000
+      internalID: -3531921612537976553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_17"
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1324
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c740445b64efc600800000000000000
+      internalID: 490862034032805827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_18"
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1324
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d27b09af9ef7190800000000000000
+      internalID: -7962388353788727970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_19"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1324
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f788c471a2c9e60800000000000000
+      internalID: 7970291720095563667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_20"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1196
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f608ca707c13d80800000000000000
+      internalID: -8272612204730093724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_21"
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1196
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dfb03da907d8b00800000000000000
+      internalID: 832445316401462674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_22"
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1196
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20964260cd578d620800000000000000
+      internalID: 2799116756267067650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_23"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1196
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86de61acaa1fc630800000000000000
+      internalID: 3949404726972307084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_24"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1132
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5305bbbcdab53390800000000000000
+      internalID: -7839154119163706530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_25"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1132
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf7f8f44b84caac0800000000000000
+      internalID: -3842616442787758159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_26"
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1132
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a001104cbeee650800000000000000
+      internalID: 6264203358782884412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_27"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1068
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4951d2460188279e0800000000000000
+      internalID: -1625086911545797228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_28"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1068
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dddb4ecf8d7a5890800000000000000
+      internalID: -7468518975445672490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "TILES CABA\xD1AS_29"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1068
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f52333914c43d60800000000000000
+      internalID: 7869130061435264777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
