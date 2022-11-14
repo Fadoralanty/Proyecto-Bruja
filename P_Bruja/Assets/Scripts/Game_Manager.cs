@@ -33,6 +33,7 @@ public class Game_Manager : MonoBehaviour,IDataPersistance
     {
         playerDamageable.onDie.AddListener(OnPlayerDieListener);
         GameOverScreen.SetActive(false);
+        Time.timeScale =  1f;
     }
 
     void OnPlayerDieListener()
@@ -54,7 +55,6 @@ public class Game_Manager : MonoBehaviour,IDataPersistance
     public void LoadData(GameData data)
     {
         _morality = data._morality;
-        isGamePaused = true;
         isGamePaused = false;
     }
 
