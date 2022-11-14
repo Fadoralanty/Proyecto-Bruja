@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Pause_Menu : MonoBehaviour
-{   //TODO agregar mas funciones en torno nesesitemos mas opciones
+{   
     private GameObject _pauseCanvas;
     private void Start()
     {
@@ -17,9 +17,18 @@ public class Pause_Menu : MonoBehaviour
         _pauseCanvas.SetActive(Game_Manager.instance.isGamePaused);
     }
 
+    public void Save()
+    {
+        DataPersistanceManager.instance.SaveGame();
+    } 
+    public void Load()
+    {
+        DataPersistanceManager.instance.LoadGame();
+    }
+
     public void MainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Exit()

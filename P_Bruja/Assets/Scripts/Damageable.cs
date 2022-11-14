@@ -44,6 +44,11 @@ public class Damageable : MonoBehaviour
         onLifeChange?.Invoke(_currentLife);
 
     }
+
+    public void SetLife(float life)
+    {
+        _currentLife = life > _maxLife ? _maxLife : life;
+    }
     public void DieHandler()
     {
         onDie.Invoke();

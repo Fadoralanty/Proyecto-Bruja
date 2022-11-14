@@ -8,7 +8,13 @@ public class MainMenu : MonoBehaviour
     public string PlayLevelScene;
     public void Play()
     {
-        SceneManager.LoadScene(PlayLevelScene);
+        DataPersistanceManager.instance.NewGame();
+        SceneManager.LoadSceneAsync(PlayLevelScene);
+    }
+
+    public void Continue()
+    {
+        SceneManager.LoadSceneAsync(PlayLevelScene);
     }
 
     public void Exit()
