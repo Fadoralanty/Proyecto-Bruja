@@ -28,5 +28,9 @@ public class InventorySimple
     public List<Item> GetItemsList()
     {
         return itemList;
+    }    
+    public void SetItemsList(List<Item> newItems)
+    {
+       itemList = new List<Item>(newItems);
     }
 }

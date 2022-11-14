@@ -6,7 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(MeleeAttack))]
 [RequireComponent(typeof(RangedAttack))]
 [RequireComponent(typeof(Damageable))]
-public class PlayerController : MonoBehaviour
+
+public class PlayerController : MonoBehaviour, IDataPersistance
 {
     [SerializeField] private Vector2 _lookDir;
     [SerializeField] private MeleeAttack _meleeAttack;
@@ -30,9 +31,11 @@ public class PlayerController : MonoBehaviour
     {
         _currMeleeTime = 0;
         _currRangedTime = 0;
+        _damageable = GetComponent<Damageable>();
+        _damageable.onDie.AddListener(OnDieListener);
         inventory = new InventorySimple();
-        uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
+        uiInventory.SetPlayer(this);
         uiInventory.DeactivateUI();
     }
 
@@ -42,9 +45,6 @@ public class PlayerController : MonoBehaviour
         _anim = GetComponent<Animator>();
         if (!_meleeAttack) _meleeAttack = GetComponent<MeleeAttack>();
         _rangedAttack = GetComponent<RangedAttack>();
-        _damageable = GetComponent<Damageable>();
-        _damageable.onDie.AddListener(OnDieListener);
-
     }
     
     private void Update()
@@ -156,7 +156,24 @@ public class PlayerController : MonoBehaviour
         Gizmos.color=Color.white;
         Gizmos.DrawLine(transform.position, (Vector2)transform.position + _lookDir);
         Gizmos.color = Color.blue;
+        
         Vector2 center = (Vector2) transform.position + _lookDir * _meleeAttack.Range;
         Gizmos.DrawWireCube(center, _meleeAttack.Size);
+    }
+
+    public void LoadData(GameData data)
+    {
+        transform.position = data.playerPosition;
+        _damageable.SetLife(data.playerCurrentLife);
+        inventory.SetItemsList(data.itemList);
+        uiInventory.RefreshInventoryItems();
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data.playerPosition = transform.position;
+        data.playerCurrentLife = _damageable.CurrentLife;
+        data.itemList = new List<Item>(inventory.GetItemsList());
+
     }
 }

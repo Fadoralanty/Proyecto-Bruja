@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Game_Manager : MonoBehaviour
+public class Game_Manager : MonoBehaviour,IDataPersistance
 {
     public static Game_Manager instance;
     
@@ -23,8 +23,8 @@ public class Game_Manager : MonoBehaviour
         else
         {
             Destroy(this);
+            return;
         }
-
         isGameOver = false;
         isGamePaused = false;
     }
@@ -41,23 +41,6 @@ public class Game_Manager : MonoBehaviour
         isGameOver = true;
     }
 
-    public void SaveGame()
-    {
-        SaveSystem.SavePlayer(player);
-    }    
-    public void LoadGame()
-    {
-        //player
-        PlayerDATA playerData = SaveSystem.LoadPlayer();
-        Vector3 position;
-        position.x = playerData.position[0];
-        position.y = playerData.position[1];
-        position.z = playerData.position[2];
-        player.transform.position = position;
-
-
-    }
-    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -66,5 +49,17 @@ public class Game_Manager : MonoBehaviour
             Time.timeScale = isGamePaused ? 0f : 1f;
         }
 
+    }
+
+    public void LoadData(GameData data)
+    {
+        _morality = data._morality;
+        isGamePaused = true;
+        isGamePaused = false;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        data._morality = _morality;
     }
 }

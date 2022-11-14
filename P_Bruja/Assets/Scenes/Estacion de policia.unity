@@ -6140,6 +6140,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 639299100, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2111808461}
+    - target: {fileID: 639299100, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210547699, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2111808461}
+    - target: {fileID: 1210547699, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveGame
+      objectReference: {fileID: 0}
     - target: {fileID: 3101966594330113362, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
       propertyPath: m_Name
       value: Pause Menu
@@ -32982,3 +32998,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2111808461 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3520952948458659995, guid: 20bb9a45bcb1c1241af6f79302dcbac4, type: 3}
+  m_PrefabInstance: {fileID: 581998332}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0ffa6d455b4b345bf0310d0213c464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
