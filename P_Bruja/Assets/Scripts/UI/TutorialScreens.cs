@@ -13,7 +13,7 @@ public class TutorialScreens : MonoBehaviour,IDataPersistance
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) || IsSeen)
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space) || IsSeen)
         {
             Game_Manager.instance.isGamePaused = false;
             IsSeen = true;

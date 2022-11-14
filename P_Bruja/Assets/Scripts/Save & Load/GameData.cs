@@ -10,6 +10,7 @@ public class GameData
     public List<Item> itemList;
     //GameManagerData
     public int _morality;
+    public string SavedScene;
     //Tutorials
     public bool isControlsScreenSeen;
     public GameData()//the data of a new game
@@ -19,5 +20,6 @@ public class GameData
         playerCurrentLife = 100;
         _morality = 0;
         isControlsScreenSeen = false;
+        SavedScene = "Level julian tejo";
     }
 }

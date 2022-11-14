@@ -163,7 +163,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
     public void LoadData(GameData data)
     {
-        transform.position = data.playerPosition;
+        //transform.position = data.playerPosition;
         _damageable.SetLife(data.playerCurrentLife);
         inventory.SetItemsList(data.itemList);
         uiInventory.RefreshInventoryItems();

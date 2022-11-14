@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3817817949604213466}
   - component: {fileID: 3817817949604213467}
   m_Layer: 5
-  m_Name: 'Press Enter to continue '
+  m_Name: 'Press Space to continue '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 457.75, y: -960}
-  m_SizeDelta: {x: 915.5023, y: 139.3334}
+  m_AnchoredPosition: {x: 318.43, y: -1010.3}
+  m_SizeDelta: {x: 1194.2, y: 139.3334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3817817949604213466
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press Enter to continue
+  m_text: 'Press Space or Enter to continue
 
 '
   m_isRightToLeft: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 85
-  m_fontSizeBase: 85
+  m_fontSize: 75
+  m_fontSizeBase: 75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
