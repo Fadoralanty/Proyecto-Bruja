@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class DataPersistanceManager : MonoBehaviour
 {
-    [Header("Debugging")] [SerializeField] private bool initializeDataIfNull;
+    [Header("Debugging")] [SerializeField] private bool IsNewGame;
     public static DataPersistanceManager instance { get; private set; }
     private GameData _gameData;
 
@@ -68,7 +68,7 @@ public class DataPersistanceManager : MonoBehaviour
     {
         _dataPersistanceObjects = FindAllDataPersistanceObjects();
         _gameData = SaveSystem.LoadGameData();
-        if (initializeDataIfNull)
+        if (IsNewGame)
         {
             NewGame();
         }
