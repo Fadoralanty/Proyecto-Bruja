@@ -33,6 +33,7 @@ public class NpcDialogueTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && index < inkJson.Length && haveMorral == true)
             {
                 //iniciar dialogo
+                changeScenes.reaadyToGO = true;
                 INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson[index]);
                 index++;
             }
@@ -51,7 +52,6 @@ public class NpcDialogueTrigger : MonoBehaviour
             {
                 //Touching Item
                 haveMorral = true;
-                changeScenes.reaadyToGO = true;
                 itemWorld.DestroySelf();
             }
         }
