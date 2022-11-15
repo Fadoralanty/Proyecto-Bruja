@@ -200,15 +200,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
-  _range: 0.5
-  _size: {x: 0.5, y: 1}
+  _range: 0.52
+  _size: {x: 0.62, y: 1.06}
   _targetMask:
     serializedVersion: 2
     m_Bits: 64
   _hasKnockback: 1
   _knockback: 3
   _knockbackTime: 0.2
-  attackDir: {x: 0, y: 0}
+  attackDir: {x: -7.861632, y: -5.1875706}
 --- !u!114 &2079966235
 MonoBehaviour:
   m_ObjectHideFlags: 0

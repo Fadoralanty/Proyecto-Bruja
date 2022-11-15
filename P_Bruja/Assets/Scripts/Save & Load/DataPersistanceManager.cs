@@ -45,7 +45,7 @@ public class DataPersistanceManager : MonoBehaviour
     }    
     public void OnSceneUnloaded(Scene scene)
     {
-        
+        //SaveGame();
     }
     private void Start()
     {
@@ -87,11 +87,8 @@ public class DataPersistanceManager : MonoBehaviour
     }   
     public void SaveGame()
     {
-        if (_gameData == null)
-        {
-            return;
-        }
-        
+        if (_gameData == null) return;
+
         foreach (IDataPersistance dataPersistanceObject in _dataPersistanceObjects)
         {
             dataPersistanceObject.SaveData(ref _gameData);

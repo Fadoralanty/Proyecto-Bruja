@@ -11,7 +11,8 @@ public class ChangeScenes : MonoBehaviour
     {
         if(collision.CompareTag("Player") && reaadyToGO == true)
         {
-            SceneManager.LoadScene(_sceneName);
+            DataPersistanceManager.instance.SaveGame();
+            SceneManager.LoadSceneAsync(_sceneName);
         }
     }
 }
