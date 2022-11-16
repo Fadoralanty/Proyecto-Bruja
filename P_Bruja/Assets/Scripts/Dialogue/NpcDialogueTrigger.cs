@@ -13,7 +13,9 @@ public class NpcDialogueTrigger : MonoBehaviour
 
     private int index;
     private bool _playerInRange;
-    private bool haveMorral = false;
+    public bool haveMorral = false;
+    [SerializeField] private ChangeScenes changeScenes;
+    [SerializeField] private string _itemTag = "Morral";
 
     private void Awake()
     {
@@ -31,6 +33,7 @@ public class NpcDialogueTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && index < inkJson.Length && haveMorral == true)
             {
                 //iniciar dialogo
+                changeScenes.reaadyToGO = true;
                 INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson[index]);
                 index++;
             }
@@ -45,10 +48,12 @@ public class NpcDialogueTrigger : MonoBehaviour
         ItemWorld itemWorld = col.GetComponent<ItemWorld>();
         if (itemWorld != null)
         {
-            //Touching Item
-            haveMorral = true;
-            Debug.Log("hola");
-            itemWorld.DestroySelf();
+            if (col.CompareTag(_itemTag))
+            {
+                //Touching Item
+                haveMorral = true;
+                itemWorld.DestroySelf();
+            }
         }
         if (col.CompareTag("Player"))
         {

@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SCENES/MainMenu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 6535407247a0e8d4bb0ba7ea9bd81928
   - enabled: 1
-    path: Assets/SCENES/Level julian tejo.unity
+    path: Assets/Scenes/Level julian tejo.unity
     guid: 27bb5fd76f5164c499863c9d91a9f173
   - enabled: 1
-    path: Assets/SCENES/Estacion de policia.unity
+    path: Assets/Scenes/Estacion de policia.unity
     guid: 98fe37c20670b834fa5634969b660b91
+  - enabled: 1
+    path: Assets/Scenes/Iglesia 1.unity
+    guid: c95b11415b91e2a4fafc179402268d5e
+  - enabled: 1
+    path: "Assets/Scenes/Caba\xF1as y campo de maiz.unity"
+    guid: c4b5b062ff0ed7d44af5d0b20f9521cd
   m_configObjects: {}

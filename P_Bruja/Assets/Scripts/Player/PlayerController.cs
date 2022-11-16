@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         _currRangedTime = 0;
         _damageable = GetComponent<Damageable>();
         _damageable.onDie.AddListener(OnDieListener);
+        _anim = GetComponent<Animator>();
         inventory = new InventorySimple();
         uiInventory.SetInventory(inventory);
         uiInventory.SetPlayer(this);
@@ -42,7 +43,6 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void Start()
     {
         _movement = GetComponent<Movement>();
-        _anim = GetComponent<Animator>();
         if (!_meleeAttack) _meleeAttack = GetComponent<MeleeAttack>();
         _rangedAttack = GetComponent<RangedAttack>();
     }
@@ -163,6 +163,10 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
     public void LoadData(GameData data)
     {
+        if (this==null)
+        {
+            return;
+        }
         //transform.position = data.playerPosition;
         _damageable.SetLife(data.playerCurrentLife);
         inventory.SetItemsList(data.itemList);

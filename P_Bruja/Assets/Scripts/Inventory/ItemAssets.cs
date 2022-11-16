@@ -12,4 +12,14 @@ public class ItemAssets : MonoBehaviour
     public Transform itemWorld;
 
     public Sprite morralSprite;
+    public Sprite keySprite;
+    public Sprite ganzuaSprite;
+    public Sprite backpackBoneSprite;
+    public Sprite backpackBookSprite;
+
+    public string tagMorral = "Morral";
+    public string tagGanzua = "Ganzua";
+    public string tagKey = "Key";
+    public string tagBone = "Bones";
+    public string tagBook = "Book";
 }

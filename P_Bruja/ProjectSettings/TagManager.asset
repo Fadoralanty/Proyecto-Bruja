@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Enemy
   - NPC
+  - Morral
+  - Ganzua
+  - Key
+  - Bones
+  - Book
   layers:
   - Default
   - TransparentFX

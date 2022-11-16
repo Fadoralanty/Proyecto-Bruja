@@ -10,7 +10,8 @@ public class DataPersistanceManager : MonoBehaviour
     [Header("Debugging")] [SerializeField] private bool IsNewGame;
     public static DataPersistanceManager instance { get; private set; }
     private GameData _gameData;
-
+    public delegate void Notify();
+    public event Notify OnGameSaved;
     public GameData GameData => _gameData;
 
     private List<IDataPersistance> _dataPersistanceObjects;
@@ -45,7 +46,7 @@ public class DataPersistanceManager : MonoBehaviour
     }    
     public void OnSceneUnloaded(Scene scene)
     {
-        
+        //SaveGame();
     }
     private void Start()
     {
@@ -87,17 +88,15 @@ public class DataPersistanceManager : MonoBehaviour
     }   
     public void SaveGame()
     {
-        if (_gameData == null)
-        {
-            return;
-        }
-        
+        if (_gameData == null) return;
+
         foreach (IDataPersistance dataPersistanceObject in _dataPersistanceObjects)
         {
             dataPersistanceObject.SaveData(ref _gameData);
         }
         
         SaveSystem.SaveGameData(_gameData);
+        OnGameSaved?.Invoke();
     }
     
 }
