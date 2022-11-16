@@ -10,7 +10,8 @@ public class DataPersistanceManager : MonoBehaviour
     [Header("Debugging")] [SerializeField] private bool IsNewGame;
     public static DataPersistanceManager instance { get; private set; }
     private GameData _gameData;
-
+    public delegate void Notify();
+    public event Notify OnGameSaved;
     public GameData GameData => _gameData;
 
     private List<IDataPersistance> _dataPersistanceObjects;
@@ -95,6 +96,7 @@ public class DataPersistanceManager : MonoBehaviour
         }
         
         SaveSystem.SaveGameData(_gameData);
+        OnGameSaved?.Invoke();
     }
     
 }
