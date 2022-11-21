@@ -12,6 +12,7 @@ public class DataPersistanceManager : MonoBehaviour
     private GameData _gameData;
     public delegate void Notify();
     public event Notify OnGameSaved;
+    public event Notify OnGameLoaded;
     public GameData GameData => _gameData;
 
     private List<IDataPersistance> _dataPersistanceObjects;
@@ -85,6 +86,9 @@ public class DataPersistanceManager : MonoBehaviour
         {
             dataPersistanceObject.LoadData(_gameData);
         }
+        OnGameLoaded?.Invoke();
+
+        
     }   
     public void SaveGame()
     {

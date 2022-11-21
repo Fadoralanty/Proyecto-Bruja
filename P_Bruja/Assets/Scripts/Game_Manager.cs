@@ -32,6 +32,7 @@ public class Game_Manager : MonoBehaviour,IDataPersistance
 
     private void Start()
     {
+        DataPersistanceManager.instance.OnGameLoaded += OnGameLoadedListener;
         playerDamageable.onDie.AddListener(OnPlayerDieListener);
         GameOverScreen.SetActive(false);
         Time.timeScale =  1f;
@@ -43,6 +44,11 @@ public class Game_Manager : MonoBehaviour,IDataPersistance
         isGameOver = true;
     }
 
+    void OnGameLoadedListener()
+    {
+        isGamePaused = false;
+        Time.timeScale = 1f;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
