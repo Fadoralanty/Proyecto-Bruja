@@ -5,6 +5,7 @@ using CodeMonkey.Utils;
 
 public class ItemWorld : MonoBehaviour
 {
+    [SerializeField] private GameObject itemGot;
     public static ItemWorld SpawnItemWorld(Vector3 position,Item item)
     {
         Transform transform = Instantiate(ItemAssets.Instance.itemWorld, position, Quaternion.identity);
@@ -41,6 +42,8 @@ public class ItemWorld : MonoBehaviour
     }
     public void DestroySelf()
     {
+         ItemObtained i =Instantiate(itemGot,transform.position,transform.rotation).GetComponent<ItemObtained>();
+         i.text.text = item.itemType.ToString() + " obtained";
         Destroy(gameObject);
     }
 }

@@ -23,12 +23,15 @@ public class MeleeAttack : MonoBehaviour
         Debug.DrawLine(transform.position,attackDir*_range);
         foreach (Collider2D hit in hitTargets)
         {
-            hit.GetComponent<Damageable>().GetDamage(_damage);
+            hit.GetComponent<Damageable>()?.GetDamage(_damage);
             if (_hasKnockback)
             {
                 Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();
+                // rb.isKinematic = false;
                 Vector2 diff = rb.transform.position - transform.position;
-                rb.AddForce(diff.normalized * _knockback, ForceMode2D.Impulse);
+                diff = diff.normalized * _knockback;
+                rb.AddForce(diff, ForceMode2D.Impulse);
+                // rb.isKinematic = true;
                 StartCoroutine(StopKnockBack(rb));
             }
         }
