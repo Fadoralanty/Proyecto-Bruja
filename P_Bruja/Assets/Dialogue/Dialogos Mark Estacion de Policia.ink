@@ -2,9 +2,6 @@ M: Bueno, bueno, bueno, pero mirá quien decidió llegar.
 R: Podría decir lo mismo, me pasé por toda la estación cuando entré y no vi a nadie, ya hacia casi 10 años que no nos vemos, ¿te volviste mas bajito  o me parece? Jajaja.
 M: Puede ser, ¿vos estabas asi de gordito en ese entonces? Jajaja.
 (Luego de quien sabe cuanto, Richard compartió risas con alguien, algo bastante raro en su vida)
-M: Por cierto Richard, lamento mucho tu pérdida, honestamente, no sabía cómo hablarte al respecto y como fuiste destituido contactarte era cada vez mas dificil y...
-R: Despreocupate Mark, ha pasado un año y aun si no lo olvidaré jamás, ya estoy comenzando a dejarlo atrás.
-M: De acuerdo, dejémoslo así. Ven, debo informarte del caso por el que te llamé.
 M: Bien, hablemos del porqué te llamé. Recientemente se reportó que cuatro personas han desaparecido en este pueblo, su último avistamiento fue en el cementerio. No se sabe qué hacían allí pero se llegó a la conclusión de que eran saqueadores de tumbas.
 R: Parece que en este mundo no se tiene respeto por los vivos ni tampoco por los muertos. Pero entonces ¿para qué me has contratado? cuando trabajabamos juntos éramos un gran equipo, ¿acaso perdiste el toque?.
 M: Ojalá la cosa fuera tan sencilla. Aún hay más, en coincidencia con la desaparición del grupo. Mucha gente comenzó a presentar ENFERMEDADES EXTRAÑAS, de entre esas personas mi hija incluida entre ellas. Por si fuera poco, el cura de la iglesia local está todo el tiempo llamándome y no tengo mucho tiempo para descansar.
