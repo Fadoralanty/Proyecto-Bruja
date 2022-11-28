@@ -47199,30 +47199,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1126436191173665136, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: Sounds.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1126436191173665136, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: Sounds.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: a6d09ab4c05535f44963e12af3f572b9, type: 3}
-    - target: {fileID: 1126436191173665136, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: Sounds.Array.data[0].name
-      value: bg
-      objectReference: {fileID: 0}
-    - target: {fileID: 1126436191173665136, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: Sounds.Array.data[0].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1126436191173665136, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: Sounds.Array.data[0].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1126436191173665136, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: Sounds.Array.data[0].IsLooping
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
       propertyPath: m_RootOrder
       value: 3
