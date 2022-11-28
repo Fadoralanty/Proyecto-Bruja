@@ -12,6 +12,7 @@ public class Item
         Ganzua,
         Key,
         BackPackBones,
+        BoneOne,
         BackPackBook
     }
 
@@ -27,6 +28,7 @@ public class Item
             case ItemType.Ganzua: return ItemAssets.Instance.ganzuaSprite;
             case ItemType.Key: return ItemAssets.Instance.keySprite;
             case ItemType.BackPackBones: return ItemAssets.Instance.backpackBoneSprite;
+            case ItemType.BoneOne: return ItemAssets.Instance.BoneSprite;
             case ItemType.BackPackBook: return ItemAssets.Instance.backpackBookSprite;
         }
     }
@@ -39,6 +41,7 @@ public class Item
             case ItemType.Ganzua: return ItemAssets.Instance.tagGanzua;
             case ItemType.Key: return ItemAssets.Instance.tagKey;
             case ItemType.BackPackBones: return ItemAssets.Instance.tagBone;
+            case ItemType.BoneOne: return ItemAssets.Instance.tagBoneOne;
             case ItemType.BackPackBook: return ItemAssets.Instance.tagBook;
         }
     }

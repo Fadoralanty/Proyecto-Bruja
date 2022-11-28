@@ -131,8 +131,7 @@ public class INK_Dialogue_Manager : MonoBehaviour
         _currStory.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
         int mor =int.Parse(_currStory.variablesState.GetVariableWithName("Moralidad")?.ToString());
-        Debug.Log(mor);
-        Game_Manager.instance._morality += mor;
+        Game_Manager.instance.MoralityPoints(mor);
     }
     private IEnumerator SelectFirstChoice()
     {
