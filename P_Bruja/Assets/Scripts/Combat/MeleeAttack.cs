@@ -24,6 +24,7 @@ public class MeleeAttack : MonoBehaviour
         foreach (Collider2D hit in hitTargets)
         {
             hit.GetComponent<Damageable>()?.GetDamage(_damage);
+            AudioManager.instance.play("golpe");
             if (_hasKnockback)
             {
                 Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();

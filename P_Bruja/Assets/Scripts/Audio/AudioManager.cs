@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Audio;
 using UnityEngine;
-
+//https://www.youtube.com/watch?v=6OT43pvUyfY&t=616s
 public class AudioManager : MonoBehaviour
 {
     public Sound[] Sounds;

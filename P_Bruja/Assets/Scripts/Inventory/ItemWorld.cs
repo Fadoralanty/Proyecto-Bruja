@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,6 +45,24 @@ public class ItemWorld : MonoBehaviour
     {
          ItemObtained i =Instantiate(itemGot,transform.position,transform.rotation).GetComponent<ItemObtained>();
          i.text.text = item.itemType.ToString() + " obtained";
+         switch (item.itemType)
+         {
+             case Item.ItemType.Morral:
+                 AudioManager.instance.play("pickup bolso");
+                 break;
+             case Item.ItemType.Ganzua:
+                 AudioManager.instance.play("Ganzua pick up");
+                 break;
+             case Item.ItemType.Key:
+                 AudioManager.instance.play("llave pickup");
+                 break;
+             case Item.ItemType.BackPackBones:
+                 AudioManager.instance.play("pickup huesos 1");
+                 break;
+             case Item.ItemType.BackPackBook:
+                 AudioManager.instance.play("pickup bolso");
+                 break;
+         }
         Destroy(gameObject);
     }
 }
