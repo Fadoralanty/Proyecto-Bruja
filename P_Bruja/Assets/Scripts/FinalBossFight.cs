@@ -6,7 +6,9 @@ public class FinalBossFight : MonoBehaviour
 {
     [SerializeField] private NpcDialogueTrigger trigger;
     [SerializeField] private GameObject witch;
+    [SerializeField] private GameObject Darkness;
     [SerializeField] private HolyWater _holyWater;
+    private bool ready = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +18,18 @@ public class FinalBossFight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(trigger.spookyThing == true)
+        if(trigger.spookyThing == true && ready == true)
         {
-            witch.SetActive(true);
-            Game_Manager.instance.InCombat = true;
-           _holyWater.StartingTeleport();
+            StartCoroutine(Start3());
+            ready = false;
         }
+    }
+
+    IEnumerator Start3()
+    {
+        witch.SetActive(true);
+        _holyWater.StartingTeleport();
+        Darkness.SetActive(true);
+        yield return null;
     }
 }

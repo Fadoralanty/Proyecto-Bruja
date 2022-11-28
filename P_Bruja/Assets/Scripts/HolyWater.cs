@@ -6,6 +6,7 @@ public class HolyWater : MonoBehaviour
 {
     [SerializeField] private Damageable _witch;
     [SerializeField] private List<Vector3> _transformsPositions;
+    [SerializeField] private GameObject _darkness;
     private int allObjects;
     private int _index;
 
@@ -40,6 +41,8 @@ public class HolyWater : MonoBehaviour
         if(allObjects >= 2)
         {
             Vulnerability();
+            StopAllCoroutines();
+            _darkness.SetActive(false);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
