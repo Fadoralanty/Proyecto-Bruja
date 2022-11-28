@@ -5261,6 +5261,7 @@ MonoBehaviour:
   inkJson:
   - {fileID: 4900000, guid: 2eee6edc23e8e7f46b9c4c00e8bd5f94, type: 3}
   haveMorral: 1
+  spookyThing: 0
   changeScenes: {fileID: 610454870}
   _itemTag: Morral
   _points: 0
@@ -5565,6 +5566,26 @@ PrefabInstance:
     - target: {fileID: 6164733631142277725, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}
       propertyPath: m_Name
       value: Sheriff
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164733632027994688, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164733632027994688, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164733632027994688, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164733632027994688, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164733632027994689, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3162817726675200889, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}

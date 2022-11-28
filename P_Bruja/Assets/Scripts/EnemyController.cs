@@ -97,7 +97,6 @@ public class EnemyController : MonoBehaviour
     {
         ItemWorld.SpawnItemWorld(transform.position, item);
         _anim.SetBool("Dead", true);
-        _anim.SetBool("Dead", true);
         Game_Manager.instance.InCombat = false;
     }
 
