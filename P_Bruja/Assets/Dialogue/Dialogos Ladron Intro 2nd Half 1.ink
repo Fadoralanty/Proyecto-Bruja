@@ -25,10 +25,6 @@ V: Ya tuvo suficiente, si lo sigues golpeando morirá
 
 (En ese momento, Richard volvió en sí de su furia, y sin mucho para decir o hacer procedió a cargar al ladron para llevarselo.)
 
-V: ¿Espera, acaso te conozco?
-
-R: (Molesto) No, jamás lo he visto, ahora déjeme que debo llevarme a este sujeto, en el calabozo de la estación de policia le tendrán alguna esquina sucia para dejarlo.
-
 -> END
 
 
