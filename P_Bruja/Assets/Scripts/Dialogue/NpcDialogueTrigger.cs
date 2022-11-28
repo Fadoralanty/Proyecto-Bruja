@@ -16,6 +16,7 @@ public class NpcDialogueTrigger : MonoBehaviour
     public bool haveMorral = false;
     [SerializeField] private ChangeScenes changeScenes;
     [SerializeField] private string _itemTag = "Morral";
+    [SerializeField] private int _points;
 
     private void Awake()
     {
@@ -34,6 +35,7 @@ public class NpcDialogueTrigger : MonoBehaviour
             {
                 //iniciar dialogo
                 changeScenes.reaadyToGO = true;
+                Game_Manager.instance.MoralityPoints(_points);
                 INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson[index]);
                 index++;
             }

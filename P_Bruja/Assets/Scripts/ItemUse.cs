@@ -32,6 +32,7 @@ public class ItemUse : MonoBehaviour
             {
                 //Touching Item
                 _isUse = true;
+                Game_Manager.instance.MoralityPoints(-25);
                 _spriteRenderer.sprite = _newSprite;
                 itemWorld.DestroySelf();
             }
