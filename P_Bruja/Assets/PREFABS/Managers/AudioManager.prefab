@@ -86,3 +86,9 @@ MonoBehaviour:
     pitch: 0.7
     Source: {fileID: 0}
     IsLooping: 0
+  - name: end song
+    clip: {fileID: 8300000, guid: f14529b524e0465469f93ad61b724bac, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    IsLooping: 0

@@ -8,12 +8,17 @@ public class CreditsScreen : MonoBehaviour
 {
     [SerializeField]private GameObject Text;
     [SerializeField]private float _scrollSpeed;
-    
+
+    private void Start()
+    {
+        AudioManager.instance.play("end song");
+    }
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.Space))
         {
-            Text.transform.position += _scrollSpeed * 2 * Time.deltaTime * Vector3.up;
+            Text.transform.position += _scrollSpeed * 3 * Time.deltaTime * Vector3.up;
         }
         else
         {

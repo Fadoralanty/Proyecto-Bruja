@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/SCENES/Scenas principales/Caba\xF1as y campo de maiz.unity"
     guid: c4b5b062ff0ed7d44af5d0b20f9521cd
+  - enabled: 1
+    path: Assets/SCENES/Scenas principales/Credits.unity
+    guid: d1cb3fe337c16034398a45122cab6597
   m_configObjects: {}
