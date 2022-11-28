@@ -80,3 +80,9 @@ MonoBehaviour:
     pitch: 1
     Source: {fileID: 0}
     IsLooping: 0
+  - name: paso tierra 3
+    clip: {fileID: 8300000, guid: 40a4997a52211414984ef2a63d80c03a, type: 3}
+    volume: 0.5
+    pitch: 0.7
+    Source: {fileID: 0}
+    IsLooping: 0

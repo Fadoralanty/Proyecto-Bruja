@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     [SerializeField] private float _rangedAttackRate;
     private InventorySimple inventory;
     [SerializeField] private UI_Inventory uiInventory;
+    [SerializeField] private float audioStepCooldown = 0.5f;
+    private float originalStepCooldown;
     public Damageable Damageable => _damageable;
     private Damageable _damageable;
 
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         _movement = GetComponent<Movement>();
         if (!_meleeAttack) _meleeAttack = GetComponent<MeleeAttack>();
         _rangedAttack = GetComponent<RangedAttack>();
+        originalStepCooldown = audioStepCooldown;
     }
     
     private void Update()
@@ -52,7 +55,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         if (Game_Manager.instance.isGamePaused) return;
         _currMeleeTime += Time.deltaTime;
         _currRangedTime += Time.deltaTime;
-        
+        audioStepCooldown -= Time.deltaTime;
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical");
         _moveDir = new Vector2(hor, ver);
@@ -97,6 +100,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         {
             uiInventory.DeactivateUI();
         }
+        
     }
     public Vector3 GetPosition()
     {
@@ -109,10 +113,19 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         {
             _anim.SetBool("Hit", false);
             _movement.Move(_moveDir.normalized);
+            PlayStepsSound();
         }
         else _anim.SetBool("Hit", false);
     }
 
+    void PlayStepsSound()
+    {
+        if (audioStepCooldown <= 0)  
+        {
+            AudioManager.instance.play("paso tierra 3");
+            audioStepCooldown = originalStepCooldown;
+        }
+    }
     void OnDieListener()
     {
         //TODO
