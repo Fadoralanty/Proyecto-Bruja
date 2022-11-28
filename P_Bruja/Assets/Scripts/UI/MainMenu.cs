@@ -9,6 +9,11 @@ public class MainMenu : MonoBehaviour,IDataPersistance
     public string PlayLevelScene;
     public string ContinueLevelScene;
 
+    private void Start()
+    {
+        AudioManager.instance.play("bg");
+    }
+
     public void Play()
     {
         DataPersistanceManager.instance.NewGame();

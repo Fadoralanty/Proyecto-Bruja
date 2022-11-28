@@ -36,6 +36,7 @@ public class Game_Manager : MonoBehaviour,IDataPersistance
         playerDamageable.onDie.AddListener(OnPlayerDieListener);
         GameOverScreen.SetActive(false);
         Time.timeScale =  1f;
+        AudioManager.instance.play("bg");
     }
 
     void OnPlayerDieListener()
