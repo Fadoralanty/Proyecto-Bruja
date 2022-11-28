@@ -11,6 +11,7 @@ public class Damageable : MonoBehaviour
     [SerializeField] Animator _anim;
     public float CurrentLife => _currentLife;
     public float MaxLife => _maxLife;
+    [SerializeField] private bool _inmortality;
     public Action<float> onLifeChange;//HP y barra de vida
     public UnityEvent onDie = new UnityEvent();
 
@@ -22,7 +23,7 @@ public class Damageable : MonoBehaviour
     
     public virtual void GetDamage(float damage)
     {
-        if (_currentLife > 0 )
+        if (_currentLife > 0 && _inmortality == false)
         {
             _anim.SetBool("Hit", true);
             _currentLife -= damage;
@@ -61,5 +62,9 @@ public class Damageable : MonoBehaviour
     public float GetLifePercentage()
     {
         return (float)_currentLife / _maxLife;
+    }
+    public void DeactivateInmortality()
+    {
+        _inmortality = false;
     }
 }

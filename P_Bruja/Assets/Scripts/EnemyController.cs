@@ -77,7 +77,9 @@ public class EnemyController : MonoBehaviour
                     MeleeAttack(diff.normalized);
                     _currMeleeTime = 0f;
                 }
+                else _anim.SetBool("Hit", false);
             }
+            else _anim.SetBool("Hit", false);
         }
         else
         {
@@ -94,6 +96,7 @@ public class EnemyController : MonoBehaviour
     void OnDieListener()
     {
         ItemWorld.SpawnItemWorld(transform.position, item);
+        _anim.SetBool("Dead", true);
         _anim.SetBool("Dead", true);
         Game_Manager.instance.InCombat = false;
     }

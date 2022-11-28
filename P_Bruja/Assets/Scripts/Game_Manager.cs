@@ -17,6 +17,7 @@ public class Game_Manager : MonoBehaviour,IDataPersistance
     [SerializeField] private GameObject GameOverScreen;
     private void Awake()
     {
+        CheckMorality();
         if (instance==null)
         {
             instance = this;
@@ -57,6 +58,23 @@ public class Game_Manager : MonoBehaviour,IDataPersistance
             Time.timeScale = isGamePaused ? 0f : 1f;
         }
 
+    }
+    public void MoralityPoints(int Points)
+    {
+        CheckMorality();
+        _morality += Points;
+        CheckMorality();
+    }
+    public void CheckMorality()
+    {
+        if(_morality < -100)
+        {
+            _morality = -100;
+        }
+        if(_morality > 100)
+        {
+            _morality = 100;
+        }
     }
 
     public void LoadData(GameData data)
