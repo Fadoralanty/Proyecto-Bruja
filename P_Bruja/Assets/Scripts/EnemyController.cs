@@ -16,6 +16,7 @@ public class EnemyController : MonoBehaviour
     private MeleeAttack _meleeAttack;
     private Animator _anim;
     private bool _isStunned;
+    public bool _imDead;
     public Item item;
 
     private void Start()
@@ -97,6 +98,7 @@ public class EnemyController : MonoBehaviour
     {
         ItemWorld.SpawnItemWorld(transform.position, item);
         _anim.SetBool("Dead", true);
+        _imDead = true;
         Game_Manager.instance.InCombat = false;
     }
 
