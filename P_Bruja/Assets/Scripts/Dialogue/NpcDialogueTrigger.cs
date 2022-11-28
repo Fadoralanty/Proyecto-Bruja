@@ -14,6 +14,7 @@ public class NpcDialogueTrigger : MonoBehaviour
     private int index;
     private bool _playerInRange;
     public bool haveMorral = false;
+    public bool spookyThing = false;
     [SerializeField] private ChangeScenes changeScenes;
     [SerializeField] private string _itemTag = "Morral";
     [SerializeField] private int _points;
@@ -36,6 +37,7 @@ public class NpcDialogueTrigger : MonoBehaviour
                 //iniciar dialogo
                 changeScenes.reaadyToGO = true;
                 Game_Manager.instance.MoralityPoints(_points);
+                spookyThing = true;
                 INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson[index]);
                 index++;
             }
