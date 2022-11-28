@@ -1515,5 +1515,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0425b76578f0241a8096abb2a66ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayLevelScene: Level julian tejo
+  PlayLevelScene: Tutorial Estacion de tren
   ContinueLevelScene: 

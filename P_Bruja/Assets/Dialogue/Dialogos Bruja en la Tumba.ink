@@ -1,3 +1,5 @@
+VAR Combate=false
+
 R: ¿Pero qué…?
 
 B: Jijiji, y ha llegado el quinto, espero no te hayas distraído mucho matando personas controladas por mí.
@@ -15,3 +17,5 @@ R: Sabes, empiezo a creer que no me pagaron lo suficiente por este trabajo.
 B: Tranquilo, en un rato ya no tendrás más preocupaciones por eso. Una vez te tenga bajo mi control solo te preocuparás por servirme a mí.
 
 R: (Creo que será mejor que huya).
+
+~Combate=true
