@@ -499,7 +499,7 @@ PrefabInstance:
     - target: {fileID: 3057233812138788816, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: changeScenes
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1978079484}
     - target: {fileID: 3057233812138788816, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: inkJson.Array.data[0]
       value: 
@@ -64754,6 +64754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1978079487}
   - component: {fileID: 1978079486}
+  - component: {fileID: 1978079484}
   m_Layer: 0
   m_Name: Change Scenes
   m_TagString: Untagged
@@ -64761,6 +64762,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1978079484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978079483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61b138325a8dd254e8e004a9937ff9b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneName: 
+  reaadyToGO: 0
 --- !u!212 &1978079486
 SpriteRenderer:
   m_ObjectHideFlags: 0
