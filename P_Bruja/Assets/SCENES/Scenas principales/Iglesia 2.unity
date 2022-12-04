@@ -510,9 +510,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4986205589650942576, guid: c53d55c8961d13d439829bcb00f542b6, type: 3}
+      objectReference: {fileID: -6145259362137128712, guid: 92d76f16a80e89043b9106c859fb563c, type: 3}
+    - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3771255779691304525, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -65087,6 +65095,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4305250918235572113, guid: df97ee8a910825a44a3eec4562692a70, type: 3}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_Name
       value: Player

@@ -2655,6 +2655,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4305250918235572113, guid: df97ee8a910825a44a3eec4562692a70, type: 3}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_Name
       value: Player (1)
@@ -4759,7 +4771,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &775018507
@@ -5620,6 +5632,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6164733631142277722, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2125390954843419215, guid: ff6c32e43a16ffe448ec0c258637fc72, type: 3}
     - target: {fileID: 6164733631142277725, guid: dd1c1d4ff11410e42a1d87ed08091380, type: 3}
       propertyPath: m_Name
       value: Sheriff
