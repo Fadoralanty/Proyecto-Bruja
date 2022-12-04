@@ -12,10 +12,10 @@ public class HolyWater : MonoBehaviour
 
     public void StartingTeleport()
     {
-            StartCoroutine(Start());
+        StartCoroutine(Start1());
     }
 
-    IEnumerator Start()
+    IEnumerator Start1()
     {
         Teleport();
         yield return new WaitForSecondsRealtime(3);
@@ -25,7 +25,7 @@ public class HolyWater : MonoBehaviour
     {
         Teleport();
         yield return new WaitForSecondsRealtime(3);
-        StartCoroutine(Start());
+        StartCoroutine(Start1());
     }
     void Teleport()
     {

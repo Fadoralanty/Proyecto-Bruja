@@ -200,6 +200,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1181904653097643013, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181904653097643013, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2922488537308553997, guid: 11f91d09e921ef443afdf82232e75ee6, type: 3}
+    - target: {fileID: 1181904653097643013, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1181904653097643033, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -45324,6 +45336,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4305250918235572113, guid: df97ee8a910825a44a3eec4562692a70, type: 3}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_Name
       value: Player

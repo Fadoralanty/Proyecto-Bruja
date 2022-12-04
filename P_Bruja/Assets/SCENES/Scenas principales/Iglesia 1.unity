@@ -352,9 +352,17 @@ PrefabInstance:
       value: NPC INK Priest
       objectReference: {fileID: 0}
     - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4986205589650942576, guid: c53d55c8961d13d439829bcb00f542b6, type: 3}
+      objectReference: {fileID: -6145259362137128712, guid: 92d76f16a80e89043b9106c859fb563c, type: 3}
+    - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3771255779691304525, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -62005,7 +62013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64849,6 +64857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1294316833}
   - component: {fileID: 1294316832}
+  - component: {fileID: 1294316834}
   m_Layer: 0
   m_Name: Sheriff Idle sprite Sheet_0
   m_TagString: Untagged
@@ -64896,7 +64905,7 @@ SpriteRenderer:
   m_SortingLayerID: 1812599733
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2574727862592394136, guid: be1b8e38762f9a64da8fe686e4f451e7, type: 3}
+  m_Sprite: {fileID: -2125390954843419215, guid: ff6c32e43a16ffe448ec0c258637fc72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -64921,6 +64930,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1294316834
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294316831}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b705cbd43111ac84fb432f107c9705dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1348945464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64985,6 +65013,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4305250918235572113, guid: df97ee8a910825a44a3eec4562692a70, type: 3}
+    - target: {fileID: 2853348631792066256, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2853348631792066257, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_Name
       value: Player
