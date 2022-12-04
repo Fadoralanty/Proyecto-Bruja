@@ -24,10 +24,10 @@ public class INK_Dialogue_Trigger : MonoBehaviour
     {
         if (Game_Manager.instance.isGamePaused) return;
         if (Game_Manager.instance.InCombat) return;
-        if (_playerInRange && !INK_Dialogue_Manager.instance._isDialogueRunning)
+        if (_playerInRange && !INK_Dialogue_Manager.instance._isDialogueRunning && index < inkJson.Length)
         {
             _visualQue.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E) && index < inkJson.Length)
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 //iniciar dialogo
                 INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson[index]);

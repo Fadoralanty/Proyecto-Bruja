@@ -63617,6 +63617,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4443455802812500962, guid: 677ee0091de817847a4d8b748c056ef4, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1467734498}
     - target: {fileID: 4443455802812500963, guid: 677ee0091de817847a4d8b748c056ef4, type: 3}
       propertyPath: m_Name
       value: INK DIALOGUE MANAGER
@@ -64888,6 +64892,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+--- !u!114 &1467734498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2853348631792066260, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+  m_PrefabInstance: {fileID: 1467734497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad272fcda76cf074db57a42c4acbaf3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1496485420
 PrefabInstance:
   m_ObjectHideFlags: 0
