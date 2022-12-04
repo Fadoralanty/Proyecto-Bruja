@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 1754619577}
   - component: {fileID: 1754619576}
   - component: {fileID: 1754619575}
+  - component: {fileID: 380966430354865114}
   m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
@@ -401,6 +402,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &380966430354865114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754619573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af65e5f43655f6469a140b4d4b59c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpbar: {fileID: 816208608}
 --- !u!1 &1181904653097643033
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +505,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1181904653097643012
@@ -509,6 +523,7 @@ MonoBehaviour:
   _maxLife: 100
   _currentLife: 0
   _anim: {fileID: 2024525720}
+  _inmortality: 0
   onDie:
     m_PersistentCalls:
       m_Calls: []
@@ -575,6 +590,7 @@ MonoBehaviour:
   _detectionRange: 3.46
   _attackRange: 1.54
   _meleeAttackRate: 1
+  _imDead: 0
   item:
     itemType: 0
     amount: 1
@@ -605,8 +621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
-  _range: 1.04
-  _size: {x: 0.5, y: 1}
+  _range: 0.52
+  _size: {x: 0.62, y: 1.06}
   _targetMask:
     serializedVersion: 2
     m_Bits: 128
