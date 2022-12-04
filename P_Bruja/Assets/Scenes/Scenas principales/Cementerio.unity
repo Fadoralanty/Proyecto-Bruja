@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 614830001}
   - component: {fileID: 614830000}
   - component: {fileID: 614830004}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Decoracion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59251,7 +59251,7 @@ GameObject:
   - component: {fileID: 1193325511}
   - component: {fileID: 1193325510}
   - component: {fileID: 1193325509}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Paredes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
