@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     
     private void Update()
     {
+        if(INK_Dialogue_Manager.instance._isDialogueRunning) return; 
         if (Game_Manager.instance.isGamePaused) return;
         _currMeleeTime += Time.deltaTime;
         _currRangedTime += Time.deltaTime;
@@ -109,6 +110,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void FixedUpdate()
     {
         if (Game_Manager.instance.isGamePaused) return;
+        if(INK_Dialogue_Manager.instance._isDialogueRunning) return;
         if (_moveDir != Vector2.zero)
         {
             _anim.SetBool("Hit", false);
