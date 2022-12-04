@@ -1,3 +1,4 @@
+VAR Combate=false
 R: Padre, teníamos razón los dos. Los desaparecidos hicieron un ritual pagano para revivir una bruja loca que ahora quiere controlar a todo el pueblo, y quién sabe qué más.
 
 P: Temía que dijeras eso, confío en que recuperaste los huesos faltantes ¿No es así?
@@ -18,4 +19,6 @@ R: Padre, dígame qué hacer.
 
 P: No podrás simplemente golpearla, debes purgar sus huesos en agua bendita, eso debilitará su presencia, luego golpéala todo lo que puedas, así se purgará para siempre.
 
-B: Eso sería un problema si pasase, ¡ESBIRROS acaben con ellos!.
+B: Eso sería un problema si pasase, ¡Te eliminaré yo misma!.
+~Combate=true
+-> END

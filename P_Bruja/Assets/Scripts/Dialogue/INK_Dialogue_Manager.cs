@@ -5,6 +5,7 @@ using System.Runtime.InteropServices;
 using Ink.Runtime;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
@@ -22,8 +23,8 @@ public class INK_Dialogue_Manager : MonoBehaviour
     [SerializeField] private GameObject[] _choices;
 
     private TextMeshProUGUI[] _choicesText;
-    
-    
+    public UnityEvent onDialogueFinished;
+
     public static INK_Dialogue_Manager instance;
     private void Awake()
     {
@@ -70,7 +71,7 @@ public class INK_Dialogue_Manager : MonoBehaviour
         _currStory = new Story(inkJson.text);
         _isDialogueRunning = true;
         _dialogueUI.SetActive(true);
-        //ContinueStory();
+        ContinueStory();
     }
 
     void ContinueStory()
@@ -97,7 +98,7 @@ public class INK_Dialogue_Manager : MonoBehaviour
         _isDialogueRunning = false;
         _dialogueUI.SetActive(false);
         _dialogueText.text = "";
-        
+        onDialogueFinished.Invoke();
     }
 
     void DisplayChoices()
@@ -131,8 +132,7 @@ public class INK_Dialogue_Manager : MonoBehaviour
         _currStory.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
         int mor =int.Parse(_currStory.variablesState.GetVariableWithName("Moralidad")?.ToString());
-        Debug.Log(mor);
-        Game_Manager.instance._morality += mor;
+        Game_Manager.instance.MoralityPoints(mor);
     }
     private IEnumerator SelectFirstChoice()
     {
