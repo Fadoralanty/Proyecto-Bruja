@@ -54,12 +54,15 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     {
         if(INK_Dialogue_Manager.instance._isDialogueRunning) return; 
         if (Game_Manager.instance.isGamePaused) return;
+        
         _currMeleeTime += Time.deltaTime;
         _currRangedTime += Time.deltaTime;
         audioStepCooldown -= Time.deltaTime;
+        
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical");
         _moveDir = new Vector2(hor, ver);
+        
         _anim.SetFloat("AnimVelX", hor);
         _anim.SetFloat("AnimVelY", ver);
         _anim.SetBool("Attacking", false);

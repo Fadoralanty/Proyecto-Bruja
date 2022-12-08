@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float _detectionRange; 
     [SerializeField] private float _attackRange; 
     [SerializeField] private float _meleeAttackRate;
+    
     private Rigidbody2D myRigidbody2D;
     private float _currMeleeTime;
     private Movement _movement;
@@ -58,7 +59,7 @@ public class EnemyController : MonoBehaviour
             return;
         }
 
-        myRigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+        myRigidbody2D.bodyType = RigidbodyType2D.Kinematic;
         _currMeleeTime += Time.deltaTime;
         Vector2 diff = _target.position - transform.position;
         float distance = diff.magnitude;
