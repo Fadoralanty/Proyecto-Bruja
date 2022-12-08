@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,14 +9,16 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float _detectionRange; 
     [SerializeField] private float _attackRange; 
     [SerializeField] private float _meleeAttackRate;
-    
+    [SerializeField] private Collider2D[] myColliders;
+    [SerializeField] private bool _isStunned;
+    [SerializeField] private float distance;
+    private Vector2 diff;
     private Rigidbody2D myRigidbody2D;
     private float _currMeleeTime;
     private Movement _movement;
     private Damageable _damageable;
     private MeleeAttack _meleeAttack;
     private Animator _anim;
-    private bool _isStunned;
     public bool _imDead;
     public Item item;
 
@@ -31,8 +33,6 @@ public class EnemyController : MonoBehaviour
         _damageable.onDie.AddListener(OnDieListener);
         _damageable.onLifeChange+=OnLifeChangeHandler;
         _currMeleeTime = 0f;
-        _attackRange = _meleeAttack.Range;
-
     }
 
     private void OnLifeChangeHandler(float life)
@@ -46,7 +46,16 @@ public class EnemyController : MonoBehaviour
         _isStunned = true;
         yield return new WaitForSeconds(time);
         _isStunned = false;
+        _movement.canMove = true;
     }
+
+    private void Update()
+    {
+        _currMeleeTime += Time.deltaTime;
+        diff = _target.position - transform.position;
+        distance = diff.magnitude;
+    }
+
     private void FixedUpdate()
     {
         if (Game_Manager.instance.isGameOver) return;
@@ -59,37 +68,39 @@ public class EnemyController : MonoBehaviour
             return;
         }
 
-        myRigidbody2D.bodyType = RigidbodyType2D.Kinematic;
-        _currMeleeTime += Time.deltaTime;
-        Vector2 diff = _target.position - transform.position;
-        float distance = diff.magnitude;
+        myRigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+
+        if (distance <= _attackRange)
+        {
+            Attack();
+        }
+        else _anim.SetBool("Hit", false);
         if (distance <= _detectionRange)
         {
             _anim.SetBool("Attacking", false);
             _movement.Move(diff.normalized);
             _anim.SetFloat("AnimVelX", diff.x);
             _anim.SetFloat("AnimVelY", diff.y);
-            if (distance <= _attackRange)
-            {
-                if (_currMeleeTime >= _meleeAttackRate)
-                {
-                    StopCoroutine(Wait(1f));
-                    StartCoroutine(Wait(1f));
-                    _anim.SetBool("Attacking", true);
-                    MeleeAttack(diff.normalized);
-                    _currMeleeTime = 0f;
-                }
-                else _anim.SetBool("Hit", false);
-            }
-            else _anim.SetBool("Hit", false);
         }
         else
         {
             _anim.SetBool("Hit", false);
-            _movement.Move(Vector2.zero);
+            //_movement.canMove = false;
         }
     }
 
+    void Attack()
+    {
+        if (_currMeleeTime >= _meleeAttackRate)
+        {
+            StopCoroutine(Wait(1f));
+            StartCoroutine(Wait(1f));
+            _anim.SetBool("Attacking", true);
+            MeleeAttack(diff.normalized);
+            _currMeleeTime = 0f;
+        }
+        else _anim.SetBool("Hit", false); 
+    }
     void MeleeAttack(Vector2 dir)
     {
         _meleeAttack.Attack(dir);
@@ -101,6 +112,10 @@ public class EnemyController : MonoBehaviour
         _anim.SetBool("Dead", true);
         _imDead = true;
         Game_Manager.instance.InCombat = false;
+        foreach (var boxCollider2D in myColliders)
+        {
+            boxCollider2D.enabled = false;
+        }
     }
 
     IEnumerator Wait(float time)
@@ -111,14 +126,11 @@ public class EnemyController : MonoBehaviour
         _movement.canMove = true;
     }
     
-    // private void OnDrawGizmosSelected()
-    // {
-    //     Gizmos.color = Color.red;
-    //     Gizmos.DrawLine(transform.position, _target.position);
-    //     Gizmos.DrawWireSphere(transform.position, _attackRange);
-    //     Vector2 diff = _target.position - transform.position;
-    //     Gizmos.DrawWireCube((Vector2)transform.position + diff.normalized, Vector2.one);
-    //     Gizmos.color = Color.blue;
-    //     Gizmos.DrawWireSphere(transform.position, _detectionRange);
-    // }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color=Color.cyan;
+        Gizmos.DrawWireSphere(transform.position,_detectionRange);
+        Gizmos.color=Color.red;
+        Gizmos.DrawWireSphere(transform.position,_attackRange);
+    }
 }
