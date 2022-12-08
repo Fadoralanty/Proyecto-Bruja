@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float _detectionRange; 
     [SerializeField] private float _attackRange; 
     [SerializeField] private float _meleeAttackRate;
+    [SerializeField] private BoxCollider2D[] myColliders;
     
     private Rigidbody2D myRigidbody2D;
     private float _currMeleeTime;
@@ -101,6 +102,10 @@ public class EnemyController : MonoBehaviour
         _anim.SetBool("Dead", true);
         _imDead = true;
         Game_Manager.instance.InCombat = false;
+        foreach (var boxCollider2D in myColliders)
+        {
+            boxCollider2D.enabled = false;
+        }
     }
 
     IEnumerator Wait(float time)

@@ -472,6 +472,14 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1181904653097643015, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181904653097643015, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.03125
+      objectReference: {fileID: 0}
     - target: {fileID: 1181904653097643033, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -1703,6 +1711,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC INK Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: m_Size.y
+      value: 1.03125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7489880595269596040, guid: 956e862f1bd51c64da0710996cb2f7c5, type: 3}
+    - target: {fileID: 3771255779691304524, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3771255779691304525, guid: 0aee59a15f48df348954b682fdf39433, type: 3}
       propertyPath: m_Radius
       value: 1
@@ -2060,6 +2080,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2843852268312410087, guid: 6f1e96958588f5140805e17ec7b45e36, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3291541693633047289, guid: 6f1e96958588f5140805e17ec7b45e36, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -2102,7 +2126,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 0.9903698, y: 0.28044605}
+  m_Offset: {x: 0.9903698, y: -0.28806973}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2113,7 +2137,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25.955177, y: 16.477398}
+  m_Size: {x: 25.955177, y: 17.614431}
   m_EdgeRadius: 0
 --- !u!66 &1919113373
 CompositeCollider2D:
@@ -2136,19 +2160,19 @@ CompositeCollider2D:
   - m_Collider: {fileID: 1919113372}
     m_ColliderPaths:
     - - X: 139679291
-        Y: -79582528
+        Y: -90952856
       - X: 139679291
-        Y: 85191448
+        Y: 85191456
       - X: -119872192
-        Y: 85191155
+        Y: 85191163
       - X: -119871899
-        Y: -79582528
+        Y: -90952856
   m_CompositePaths:
     m_Paths:
-    - - {x: 13.967899, y: -7.958253}
-      - {x: 13.967899, y: 8.519145}
+    - - {x: 13.967899, y: -9.095285}
+      - {x: 13.967899, y: 8.519146}
       - {x: -11.98722, y: 8.519087}
-      - {x: -11.987161, y: -7.958253}
+      - {x: -11.987161, y: -9.095285}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &1919113374
@@ -47600,10 +47624,6 @@ PrefabInstance:
     - target: {fileID: 3817817951017061548, guid: b0f9a31e5caba954b9480d766eeba6a3, type: 3}
       propertyPath: m_Name
       value: Controls Screen
-      objectReference: {fileID: 0}
-    - target: {fileID: 3817817951017061548, guid: b0f9a31e5caba954b9480d766eeba6a3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3817817951017061584, guid: b0f9a31e5caba954b9480d766eeba6a3, type: 3}
       propertyPath: m_Pivot.x
