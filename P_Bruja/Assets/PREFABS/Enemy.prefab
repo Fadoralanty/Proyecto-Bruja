@@ -588,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
   _detectionRange: 3.46
-  _attackRange: 1.54
+  _attackRange: 0.52
   _meleeAttackRate: 1
   myColliders:
   - {fileID: 104917985}

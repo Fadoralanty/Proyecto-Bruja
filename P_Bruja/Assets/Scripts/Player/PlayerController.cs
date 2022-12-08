@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     public Damageable Damageable => _damageable;
     private Damageable _damageable;
 
-
+    private Collider2D _collider2D;
     private Movement _movement;
     private Vector2 _moveDir;
     private Animator _anim;
@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void Start()
     {
         _movement = GetComponent<Movement>();
+        _collider2D = GetComponent<Collider2D>();
         if (!_meleeAttack) _meleeAttack = GetComponent<MeleeAttack>();
         _rangedAttack = GetComponent<RangedAttack>();
         originalStepCooldown = audioStepCooldown;
@@ -159,6 +160,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
             _currRangedTime = 0f;
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         ItemWorld itemWorld = collision.GetComponent<ItemWorld>();
@@ -169,6 +171,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
             itemWorld.DestroySelf();
         }
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.color=Color.white;
