@@ -588,11 +588,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target: {fileID: 0}
   _detectionRange: 3.46
-  _attackRange: 0.52
+  _attackRange: 0.55
   _meleeAttackRate: 1
   myColliders:
-  - {fileID: 104917985}
   - {fileID: 1181904653097643015}
+  - {fileID: 3276496069824112002}
+  _isStunned: 0
+  distance: 0
   _imDead: 0
   item:
     itemType: 0
