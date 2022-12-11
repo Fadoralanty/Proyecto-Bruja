@@ -2721,17 +2721,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
---- !u!114 &490021078 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2853348631792066260, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
-  m_PrefabInstance: {fileID: 490021077}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad272fcda76cf074db57a42c4acbaf3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &491661807
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,10 +4127,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4443455802812500962, guid: 677ee0091de817847a4d8b748c056ef4, type: 3}
-      propertyPath: _player
-      value: 
-      objectReference: {fileID: 490021078}
     - target: {fileID: 4443455802812500963, guid: 677ee0091de817847a4d8b748c056ef4, type: 3}
       propertyPath: m_Name
       value: INK DIALOGUE MANAGER
@@ -5206,8 +5191,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2367f1b1f578c743965aea0761defd0, type: 3}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1296444168
 GameObject:
   m_ObjectHideFlags: 0
@@ -5273,7 +5256,7 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1296444170
@@ -5290,7 +5273,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1297936050
 GameObject:
   m_ObjectHideFlags: 0
@@ -5926,8 +5908,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99b3b26bfca021143a2ed4011b1ccaa0, type: 3}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1950764007
 GameObject:
   m_ObjectHideFlags: 0
@@ -5993,7 +5973,7 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1950764009
@@ -6010,7 +5990,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1001 &2020028671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6194,7 +6173,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: baf243abe2461e94aa6b6af315780d03, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

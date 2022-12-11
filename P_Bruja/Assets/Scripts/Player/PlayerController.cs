@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     public Damageable Damageable => _damageable;
     private Damageable _damageable;
 
-
+    private Collider2D _collider2D;
     private Movement _movement;
     private Vector2 _moveDir;
     private Animator _anim;
@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void Start()
     {
         _movement = GetComponent<Movement>();
+        _collider2D = GetComponent<Collider2D>();
         if (!_meleeAttack) _meleeAttack = GetComponent<MeleeAttack>();
         _rangedAttack = GetComponent<RangedAttack>();
         originalStepCooldown = audioStepCooldown;
@@ -52,13 +53,17 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     
     private void Update()
     {
+        if(INK_Dialogue_Manager.instance._isDialogueRunning) return; 
         if (Game_Manager.instance.isGamePaused) return;
+        
         _currMeleeTime += Time.deltaTime;
         _currRangedTime += Time.deltaTime;
         audioStepCooldown -= Time.deltaTime;
+        
         float hor = Input.GetAxisRaw("Horizontal");
         float ver = Input.GetAxisRaw("Vertical");
         _moveDir = new Vector2(hor, ver);
+        
         _anim.SetFloat("AnimVelX", hor);
         _anim.SetFloat("AnimVelY", ver);
         _anim.SetBool("Attacking", false);
@@ -85,10 +90,10 @@ public class PlayerController : MonoBehaviour, IDataPersistance
             _anim.SetBool("Attacking", false);
         }     
         
-        if (Input.GetButtonDown("Fire2"))
-        {
-            RangedAttack();
-        }
+        //if (Input.GetButtonDown("Fire2"))
+        //{
+        //    RangedAttack();
+        //}
     }
     public void ActivateUI()
     {
@@ -109,6 +114,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private void FixedUpdate()
     {
         if (Game_Manager.instance.isGamePaused) return;
+        if(INK_Dialogue_Manager.instance._isDialogueRunning) return;
         if (_moveDir != Vector2.zero)
         {
             _anim.SetBool("Hit", false);
@@ -154,16 +160,18 @@ public class PlayerController : MonoBehaviour, IDataPersistance
             _currRangedTime = 0f;
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         ItemWorld itemWorld = collision.GetComponent<ItemWorld>();
         if (itemWorld != null)
         {
             //Touching Item
-            inventory.AddItem(itemWorld.GetItem(),19);
+            inventory.AddItem(itemWorld.GetItem(),5);
             itemWorld.DestroySelf();
         }
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.color=Color.white;
@@ -181,7 +189,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
             return;
         }
         //transform.position = data.playerPosition;
-        _damageable.SetLife(data.playerCurrentLife);
+        //_damageable.SetLife(data.playerCurrentLife);
         inventory.SetItemsList(data.itemList);
         uiInventory.RefreshInventoryItems();
     }
@@ -189,7 +197,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     public void SaveData(ref GameData data)
     {
         data.playerPosition = transform.position;
-        data.playerCurrentLife = _damageable.CurrentLife;
+        //data.playerCurrentLife = _damageable.CurrentLife;
         data.itemList = new List<Item>(inventory.GetItemsList());
 
     }
