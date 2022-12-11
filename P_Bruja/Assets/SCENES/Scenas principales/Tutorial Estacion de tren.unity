@@ -420,6 +420,10 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 558979539}
+    - target: {fileID: 161728461, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
+      propertyPath: myColliders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1754619577, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_SortingOrder
       value: 10
@@ -47565,6 +47569,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2079966225, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
+      propertyPath: _maxLife
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2079966230, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
       propertyPath: m_Size.y
       value: 0.98382556

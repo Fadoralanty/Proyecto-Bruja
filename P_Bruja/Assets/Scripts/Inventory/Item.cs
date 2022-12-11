@@ -13,7 +13,8 @@ public class Item
         Key,
         BackPackBones,
         BoneOne,
-        BackPackBook
+        BackPackBook,
+        None
     }
 
     public ItemType itemType;

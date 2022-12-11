@@ -90,10 +90,10 @@ public class PlayerController : MonoBehaviour, IDataPersistance
             _anim.SetBool("Attacking", false);
         }     
         
-        if (Input.GetButtonDown("Fire2"))
-        {
-            RangedAttack();
-        }
+        //if (Input.GetButtonDown("Fire2"))
+        //{
+        //    RangedAttack();
+        //}
     }
     public void ActivateUI()
     {
@@ -167,7 +167,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         if (itemWorld != null)
         {
             //Touching Item
-            inventory.AddItem(itemWorld.GetItem(),19);
+            inventory.AddItem(itemWorld.GetItem(),5);
             itemWorld.DestroySelf();
         }
     }
@@ -189,7 +189,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
             return;
         }
         //transform.position = data.playerPosition;
-        _damageable.SetLife(data.playerCurrentLife);
+        //_damageable.SetLife(data.playerCurrentLife);
         inventory.SetItemsList(data.itemList);
         uiInventory.RefreshInventoryItems();
     }
@@ -197,7 +197,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     public void SaveData(ref GameData data)
     {
         data.playerPosition = transform.position;
-        data.playerCurrentLife = _damageable.CurrentLife;
+        //data.playerCurrentLife = _damageable.CurrentLife;
         data.itemList = new List<Item>(inventory.GetItemsList());
 
     }
