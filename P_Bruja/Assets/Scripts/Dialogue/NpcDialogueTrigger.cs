@@ -15,6 +15,7 @@ public class NpcDialogueTrigger : MonoBehaviour
     private bool _playerInRange;
     public bool haveMorral = false;
     public bool spookyThing = false;
+    [SerializeField] GameObject _needItem;
     [SerializeField] private ChangeScenes changeScenes;
     [SerializeField] private string _itemTag = "Morral";
     [SerializeField] private int _points;
@@ -56,6 +57,7 @@ public class NpcDialogueTrigger : MonoBehaviour
             {
                 //Touching Item
                 haveMorral = true;
+                _needItem.SetActive(false);
                 itemWorld.DestroySelf();
             }
         }
