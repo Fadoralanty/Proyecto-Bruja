@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         _anim.SetFloat("AnimVelY", ver);
         _anim.SetBool("Attacking", false);
 
-        if(Input.GetKeyDown(KeyCode.I))
+        if(Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Tab)) //Open Inventory
         {
             _isUiInventoryActivate = !_isUiInventoryActivate;
             ActivateUI();
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         }
         
         if (!Game_Manager.instance.InCombat) return;
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1")) // Attack
         {
             MeleeAttack();
         }
