@@ -11,7 +11,6 @@ public class CheckRecolectionObjects : MonoBehaviour
     public void BoolsChecks()
     {
         _Check++;
-        Debug.Log("checking");
     }
     public void CheckReadytoGO()
     {

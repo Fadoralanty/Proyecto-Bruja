@@ -305,6 +305,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -2094
       objectReference: {fileID: 0}
+    - target: {fileID: 1295334229866291246, guid: d146d63ab0f302f43951df0b60a78d30, type: 3}
+      propertyPath: m_text
+      value: "Story and Narrative\nJuan M. Bordachar\n\nLead Artist\nSolange Bordeta\n\nLevel
+        Design\nMatias Rosello\n\nAnimation\nLonar Cabello\n\nProgramming\nJulian
+        tejo\nLonar Cabello\n\nQA\nMatias Rosello\nJuan M. Bordachar\nLonar Cabello\n\nSpecial
+        thanks to the Testers\nGregorio Martinez\nRolando Ramirez\nTom\xE1s Sossich\nMariano
+        Alvarez"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d146d63ab0f302f43951df0b60a78d30, type: 3}
 --- !u!1001 &6414708049909029021

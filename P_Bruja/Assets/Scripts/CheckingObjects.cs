@@ -16,7 +16,6 @@ public class CheckingObjects : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             _checkObs.BoolsChecks();
-            Debug.Log("1");
             _checkObs.CheckReadytoGO();
             _collider.enabled = false;
         }

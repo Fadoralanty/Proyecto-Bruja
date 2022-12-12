@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private float _currRangedTime;
     private bool _isAttacking;
     private bool _isUiInventoryActivate = false;
+    private bool _touchingGrass = false;
     private void Awake()
     {
         _currMeleeTime = 0;
@@ -167,9 +168,18 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         if (itemWorld != null)
         {
             //Touching Item
-            inventory.AddItem(itemWorld.GetItem(),5);
+            inventory.AddItem(itemWorld.GetItem(), 5);
             itemWorld.DestroySelf();
         }
+        if (collision.CompareTag("Grass"))
+        {
+
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
     }
 
     private void OnDrawGizmos()

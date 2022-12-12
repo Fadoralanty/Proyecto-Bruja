@@ -46,6 +46,19 @@ public class Item
             case ItemType.BackPackBook: return ItemAssets.Instance.tagBook;
         }
     }
+    public string GetTextInfo()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.Morral: return ItemAssets.Instance.tagMorral;
+            case ItemType.Ganzua: return ItemAssets.Instance.tagGanzua;
+            case ItemType.Key: return ItemAssets.Instance.tagKey;
+            case ItemType.BackPackBones: return ItemAssets.Instance.tagBone;
+            case ItemType.BoneOne: return ItemAssets.Instance.tagBoneOne;
+            case ItemType.BackPackBook: return ItemAssets.Instance.tagBook;
+        }
+    }
 
     public bool IsStackeble()
     {
