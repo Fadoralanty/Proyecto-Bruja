@@ -4,6 +4,8 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
+    //Settings
+    public float volume;
     //playerControllerData
     public Vector3 playerPosition;
     public float playerCurrentLife;
@@ -20,6 +22,7 @@ public class GameData
         playerCurrentLife = 100;
         _morality = 0;
         isControlsScreenSeen = false;
-        SavedScene = "Level julian tejo";
+        SavedScene = "Tutorial Estacion de tren";
+        volume = 1;
     }
 }

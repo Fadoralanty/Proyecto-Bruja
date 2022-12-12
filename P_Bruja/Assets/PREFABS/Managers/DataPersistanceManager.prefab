@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8eb827b557b0314980b407e81aca07f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initializeDataIfNull: 0
+  IsNewGame: 0

@@ -38,6 +38,7 @@ public class Game_Manager : MonoBehaviour,IDataPersistance
         GameOverScreen.SetActive(false);
         Time.timeScale =  1f;
         AudioManager.instance.play("bg");
+       // Debug.Log(SceneManager.GetActiveScene().name);
     }
 
     void OnPlayerDieListener()
