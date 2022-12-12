@@ -123,79 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &135499986
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 135499989}
-  - component: {fileID: 135499988}
-  - component: {fileID: 135499987}
-  m_Layer: 0
-  m_Name: Chase by the witch
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &135499987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135499986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cfd521a194b08a418d3f4314825b48d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemy: {fileID: 2058132546}
-  inkJson:
-  - {fileID: 4900000, guid: 551cfc09d3ee1284c8c1a2b4f4755161, type: 3}
---- !u!61 &135499988
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135499986}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!4 &135499989
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135499986}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.336, y: -31.282, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &202612169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -793,7 +720,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &566075042
 GameObject:
@@ -58873,7 +58800,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: a107cadc09c92f9438813a97e4b742d4, type: 2}
     - target: {fileID: 1181904653097643010, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 1181904653097643010, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59373,6 +59300,7 @@ GameObject:
   - component: {fileID: 1170532862}
   - component: {fileID: 1170532861}
   - component: {fileID: 1170532860}
+  - component: {fileID: 1170532863}
   m_Layer: 0
   m_Name: Checking Objects
   m_TagString: Untagged
@@ -59406,7 +59334,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.036280632}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -59417,7 +59345,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.5, y: 0.42743874}
   m_EdgeRadius: 0
 --- !u!4 &1170532862
 Transform:
@@ -59433,6 +59361,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1170532863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170532859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfd521a194b08a418d3f4314825b48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 2058132546}
+  inkJson:
+  - {fileID: 4900000, guid: 551cfc09d3ee1284c8c1a2b4f4755161, type: 3}
 --- !u!1 &1193325507
 GameObject:
   m_ObjectHideFlags: 0
@@ -64485,6 +64428,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480979998, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480979998, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3101966594330113362, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
       propertyPath: m_Name
       value: Pause Menu
@@ -65006,7 +64969,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 750fb39cdfdda2f4e855bb5b77aaee98, type: 2}
     - target: {fileID: 1181904653097643010, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1181904653097643010, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65086,7 +65049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1450663847711777093, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: _Speed
-      value: 4
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 8069034498113542270, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: inkJson.Array.size

@@ -74,7 +74,10 @@ public class EnemyController : MonoBehaviour
 
             if (distance <= _attackRange)
         {
-            Attack();
+            if (_imDead == false)
+            {
+                Attack();
+            }
         }
         else
         {
