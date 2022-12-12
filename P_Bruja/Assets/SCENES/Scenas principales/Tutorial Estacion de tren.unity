@@ -700,6 +700,113 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2853348631792066263, guid: 3ea3e18de85c8234abe1838e79aa94b2, type: 3}
   m_PrefabInstance: {fileID: 2853348633224506483}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &588262700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 588262702}
+  - component: {fileID: 588262701}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &588262701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588262700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c685862415d95af4f8a19474be2aa5fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sounds:
+  - name: bg
+    clip: {fileID: 8300000, guid: a6d09ab4c05535f44963e12af3f572b9, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 1
+  - name: golpe
+    clip: {fileID: 8300000, guid: 289c4c0208d0a7b49bbc48836dcfe32b, type: 3}
+    volume: 0.75
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: llave pickup
+    clip: {fileID: 8300000, guid: 35f16e98ad238f542836175c1815529f, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: pickup bolso
+    clip: {fileID: 8300000, guid: a547d0e6fb324de4baa84b2846b3df1c, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: Ganzua pick up
+    clip: {fileID: 8300000, guid: e63431693deb55e4cb1d1e3d6cb116e1, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: pickup huesos 1
+    clip: {fileID: 8300000, guid: 3f7e95858966e874a9b897b7fa25aa7a, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: paso tierra 3
+    clip: {fileID: 8300000, guid: 40a4997a52211414984ef2a63d80c03a, type: 3}
+    volume: 0.5
+    pitch: 0.7
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: end song
+    clip: {fileID: 8300000, guid: f14529b524e0465469f93ad61b724bac, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: Boss Theme
+    clip: {fileID: 8300000, guid: 672bf3293a5473540aafed348106a3f3, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 1
+--- !u!4 &588262702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588262700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &594905110
 GameObject:
   m_ObjectHideFlags: 0
@@ -47520,6 +47627,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480979998, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480979998, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3101966594330113362, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
       propertyPath: m_Name
       value: Pause Menu
@@ -47570,63 +47697,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
---- !u!1001 &3259368610784884104
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 892246068820721763, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_Name
-      value: AudioManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198330826914519637, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6929aed6f8dadca42b4320efff529a84, type: 3}
 --- !u!1001 &3817817950089570323
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -49,52 +49,61 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 1
   - name: golpe
     clip: {fileID: 8300000, guid: 289c4c0208d0a7b49bbc48836dcfe32b, type: 3}
     volume: 0.75
     pitch: 1
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 0
   - name: llave pickup
     clip: {fileID: 8300000, guid: 35f16e98ad238f542836175c1815529f, type: 3}
     volume: 1
     pitch: 1
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 0
   - name: pickup bolso
     clip: {fileID: 8300000, guid: a547d0e6fb324de4baa84b2846b3df1c, type: 3}
     volume: 1
     pitch: 1
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 0
   - name: Ganzua pick up
     clip: {fileID: 8300000, guid: e63431693deb55e4cb1d1e3d6cb116e1, type: 3}
     volume: 1
     pitch: 1
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 0
   - name: pickup huesos 1
     clip: {fileID: 8300000, guid: 3f7e95858966e874a9b897b7fa25aa7a, type: 3}
     volume: 1
     pitch: 1
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 0
   - name: paso tierra 3
     clip: {fileID: 8300000, guid: 40a4997a52211414984ef2a63d80c03a, type: 3}
     volume: 0.5
     pitch: 0.7
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 0
   - name: end song
     clip: {fileID: 8300000, guid: f14529b524e0465469f93ad61b724bac, type: 3}
     volume: 1
     pitch: 1
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 0
   - name: Boss Theme
     clip: {fileID: 8300000, guid: 672bf3293a5473540aafed348106a3f3, type: 3}
     volume: 1
     pitch: 1
     Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 1

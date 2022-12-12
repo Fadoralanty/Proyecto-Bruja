@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class Pause_Menu : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI GameSavedText;
+    public AudioMixer AudioMixer;
+   
     private GameObject _pauseCanvas;
     private void Start()
     {
@@ -57,4 +60,10 @@ public class Pause_Menu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void SetVolume(float volume)
+    {
+        if(volume==0){ volume+=0.00001f;} 
+        AudioMixer.SetFloat("Volume", Mathf.Log10(volume) * 20); 
+    } 
 }

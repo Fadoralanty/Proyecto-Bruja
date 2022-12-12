@@ -13,7 +13,7 @@ public class Sound
     public float pitch;
     [HideInInspector]
     public AudioSource Source;
-
+    public AudioMixerGroup mixerGroup; 
     public bool IsLooping;
 
 }
