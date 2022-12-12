@@ -107,3 +107,24 @@ MonoBehaviour:
     Source: {fileID: 0}
     mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
     IsLooping: 1
+  - name: Grass
+    clip: {fileID: 8300000, guid: 7001d1df6ba48d4498ffa51d20401be0, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: Cement
+    clip: {fileID: 8300000, guid: 2ff0c86d3ae4dad498b81cbba4803e00, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0
+  - name: Wood
+    clip: {fileID: 8300000, guid: 87a4f78794418d74597e67a7265894df, type: 3}
+    volume: 1
+    pitch: 3
+    Source: {fileID: 0}
+    mixerGroup: {fileID: 24300002, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+    IsLooping: 0

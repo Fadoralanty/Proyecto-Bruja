@@ -30,6 +30,9 @@ public class PlayerController : MonoBehaviour, IDataPersistance
     private bool _isAttacking;
     private bool _isUiInventoryActivate = false;
     private bool _touchingGrass = false;
+    private bool _touchingDirt = false;
+    private bool _touchingCement = false;
+    private bool _touchingWood = false;
     private void Awake()
     {
         _currMeleeTime = 0;
@@ -127,9 +130,24 @@ public class PlayerController : MonoBehaviour, IDataPersistance
 
     void PlayStepsSound()
     {
-        if (audioStepCooldown <= 0)  
+        if (audioStepCooldown <= 0 && _touchingDirt == true)  
         {
             AudioManager.instance.play("paso tierra 3");
+            audioStepCooldown = originalStepCooldown;
+        }
+        if(audioStepCooldown <= 0 && _touchingGrass == true)
+        {
+            AudioManager.instance.play("Grass");
+            audioStepCooldown = originalStepCooldown;
+        }
+        if(audioStepCooldown <= 0 && _touchingCement == true)
+        {
+            AudioManager.instance.play("Cement");
+            audioStepCooldown = originalStepCooldown;
+        }
+        if(audioStepCooldown <= 0 && _touchingWood == true)
+        {
+            AudioManager.instance.play("Wood");
             audioStepCooldown = originalStepCooldown;
         }
     }
@@ -173,7 +191,23 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         }
         if (collision.CompareTag("Grass"))
         {
-
+            DeactivateBools();
+            _touchingGrass = true;
+        }
+        if(collision.CompareTag("Dirt"))
+        {
+            DeactivateBools();
+            _touchingDirt = true;
+        }
+        if(collision.CompareTag("Cement"))
+        {
+            DeactivateBools();
+            _touchingCement = true;
+        }
+        if(collision.CompareTag("Wood"))
+        {
+            DeactivateBools();
+            _touchingWood = true;
         }
     }
 
@@ -192,6 +226,13 @@ public class PlayerController : MonoBehaviour, IDataPersistance
         Gizmos.DrawWireCube(center, _meleeAttack.Size);
     }
 
+    private void DeactivateBools()
+    {
+        _touchingGrass = false;
+        _touchingDirt = false;
+        _touchingCement = false;
+        _touchingWood = false;
+    }
     public void LoadData(GameData data)
     {
         if (this==null)

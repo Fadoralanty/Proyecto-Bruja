@@ -13,6 +13,9 @@ TagManager:
   - Book
   - BoneOne
   - Grass
+  - Dirt
+  - Cement
+  - Wood
   layers:
   - Default
   - TransparentFX
