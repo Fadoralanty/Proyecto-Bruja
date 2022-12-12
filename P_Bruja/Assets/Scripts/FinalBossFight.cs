@@ -46,6 +46,8 @@ public class FinalBossFight : MonoBehaviour
         Darkness.SetActive(true);
         witch.SetActive(true);
         _holyWater.StartingTeleport();
+        AudioManager.instance.play("Boss Theme");
+        AudioManager.instance.Stop("bg");
         yield return null;
     }
 }

@@ -92,3 +92,9 @@ MonoBehaviour:
     pitch: 1
     Source: {fileID: 0}
     IsLooping: 0
+  - name: Boss Theme
+    clip: {fileID: 8300000, guid: 672bf3293a5473540aafed348106a3f3, type: 3}
+    volume: 1
+    pitch: 1
+    Source: {fileID: 0}
+    IsLooping: 1
