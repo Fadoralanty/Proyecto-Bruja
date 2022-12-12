@@ -52,7 +52,7 @@ MonoBehaviour:
     IsLooping: 1
   - name: golpe
     clip: {fileID: 8300000, guid: 289c4c0208d0a7b49bbc48836dcfe32b, type: 3}
-    volume: 1
+    volume: 0.75
     pitch: 1
     Source: {fileID: 0}
     IsLooping: 0
