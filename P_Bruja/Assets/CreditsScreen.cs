@@ -11,6 +11,10 @@ public class CreditsScreen : MonoBehaviour
 
     private void Start()
     {
+        foreach (var sound in AudioManager.instance.Sounds)
+        {
+            AudioManager.instance.Stop(sound.name);
+        }
         AudioManager.instance.play("end song");
     }
 

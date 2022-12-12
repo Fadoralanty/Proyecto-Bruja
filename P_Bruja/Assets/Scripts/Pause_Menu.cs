@@ -21,6 +21,7 @@ public class Pause_Menu : MonoBehaviour ,IDataPersistance
         _pauseCanvas = gameObject.transform.GetChild(0).gameObject;
         DataPersistanceManager.instance.OnGameSaved += OnSaveListener;
         _volumeSlider.value = _volume;
+        
     }
 
     private void OnDisable()
