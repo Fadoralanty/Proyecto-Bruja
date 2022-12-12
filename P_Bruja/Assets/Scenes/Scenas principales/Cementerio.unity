@@ -65086,7 +65086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1450663847711777093, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: _Speed
-      value: 4.01
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8069034498113542270, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: inkJson.Array.size

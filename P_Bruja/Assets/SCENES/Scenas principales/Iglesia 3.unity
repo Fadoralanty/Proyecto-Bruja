@@ -1220,7 +1220,7 @@ PrefabInstance:
       objectReference: {fileID: 798362654}
     - target: {fileID: 161728461, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: item.itemType
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 161728461, guid: 7091a963bb6a9cd4baa03b615cc53610, type: 3}
       propertyPath: _detectionRange
@@ -62539,6 +62539,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 579160056, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480979998, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480979998, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3101966594330113362, guid: 025e6c767ebf0f649aa6e4288ab81c7c, type: 3}
       propertyPath: m_Name
       value: Pause Menu
