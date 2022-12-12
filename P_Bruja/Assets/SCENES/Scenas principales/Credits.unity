@@ -309,9 +309,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "Story and Narrative\nJuan M. Bordachar\n\nLead Artist\nSolange Bordeta\n\nLevel
         Design\nMatias Rosello\n\nAnimation\nLonar Cabello\n\nProgramming\nJulian
-        tejo\nLonar Cabello\n\nQA\nMatias Rosello\nJuan M. Bordachar\nLonar Cabello\n\nSpecial
-        thanks to the Testers\nGregorio Martinez\nRolando Ramirez\nTom\xE1s Sossich\nMariano
-        Alvarez"
+        tejo\nLonar Cabello\n\nQA\nMatias Rosello\nJuan M. Bordachar\nLonar Cabello\n\nSound
+        Design\nJuli\xE1n Tejo\nLonar Cabello\nMat\xEDas Rosell\xF3\n\nSpecial thanks
+        to the Testers\nGregorio Martinez\nRolando Ramirez\nTom\xE1s Sossich\nMariano
+        Alvarez\nLucas Farina\nNicol\xE1s Gil Nogara"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d146d63ab0f302f43951df0b60a78d30, type: 3}
