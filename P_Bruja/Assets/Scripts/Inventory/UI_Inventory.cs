@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using CodeMonkey.Utils;
+using TMPro;
 
 public class UI_Inventory : MonoBehaviour
 {
@@ -61,6 +62,8 @@ public class UI_Inventory : MonoBehaviour
             itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize, y * itemSlotCellSize);
             Image image = itemSlotRectTransform.Find("Sprite").GetComponent<Image>();
             image.sprite = item.GetSprite();
+            Text _string = itemSlotRectTransform.Find("TextInfo").GetComponent<Text>();
+            _string.text = item.GetTextInfo();
             x++;
             if(x > 4)
             {
