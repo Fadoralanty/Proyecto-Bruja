@@ -846,7 +846,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameSavedText: {fileID: 6202101212412315850}
+  _volumeSlider: {fileID: 8148586}
   AudioMixer: {fileID: 24100000, guid: 7b67932e29db6e24894aade183733ae3, type: 2}
+  _volume: 0
 --- !u!1 &3101966594344489712
 GameObject:
   m_ObjectHideFlags: 0
