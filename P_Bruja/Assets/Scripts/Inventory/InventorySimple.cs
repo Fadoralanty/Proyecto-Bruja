@@ -13,7 +13,7 @@ public class InventorySimple
     }
     public void AddItem(Item item, int limit)
     {
-        if (itemList.Count <= limit)
+        if (itemList.Count < limit)
         {
             itemList.Add(item);
             OnItemListChanged?.Invoke(this, EventArgs.Empty);

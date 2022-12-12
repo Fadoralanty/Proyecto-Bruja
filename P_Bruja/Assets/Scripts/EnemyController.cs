@@ -67,17 +67,22 @@ public class EnemyController : MonoBehaviour
             myRigidbody2D.bodyType = RigidbodyType2D.Static;
             return;
         }
+        if (_imDead == false)
+        {
+            myRigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+        }
 
-        myRigidbody2D.bodyType = RigidbodyType2D.Dynamic;
-
-        if (distance <= _attackRange)
+            if (distance <= _attackRange)
         {
             Attack();
         }
-        else _anim.SetBool("Hit", false);
+        else
+        {
+            _anim.SetBool("Hit", false);
+            _anim.SetBool("Attacking", false);
+        }
         if (distance <= _detectionRange)
         {
-            _anim.SetBool("Attacking", false);
             _movement.Move(diff.normalized);
             _anim.SetFloat("AnimVelX", diff.x);
             _anim.SetFloat("AnimVelY", diff.y);
@@ -95,14 +100,18 @@ public class EnemyController : MonoBehaviour
         {
             StopCoroutine(Wait(1f));
             StartCoroutine(Wait(1f));
-            _anim.SetBool("Attacking", true);
             MeleeAttack(diff.normalized);
             _currMeleeTime = 0f;
         }
-        else _anim.SetBool("Hit", false); 
+        else
+        {
+            _anim.SetBool("Hit", false);
+        }
+        
     }
     void MeleeAttack(Vector2 dir)
     {
+        _anim.SetBool("Attacking", true);
         _meleeAttack.Attack(dir);
     }
     

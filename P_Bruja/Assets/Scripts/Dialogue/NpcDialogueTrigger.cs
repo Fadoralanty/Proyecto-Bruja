@@ -15,6 +15,7 @@ public class NpcDialogueTrigger : MonoBehaviour
     private bool _playerInRange;
     public bool haveMorral = false;
     public bool spookyThing = false;
+    [SerializeField] GameObject _needItem;
     [SerializeField] private ChangeScenes changeScenes;
     [SerializeField] private string _itemTag = "Morral";
     [SerializeField] private int _points;
@@ -29,10 +30,10 @@ public class NpcDialogueTrigger : MonoBehaviour
     {
         if (Game_Manager.instance.isGamePaused) return;
         if (Game_Manager.instance.InCombat) return;
-        if (_playerInRange && !INK_Dialogue_Manager.instance._isDialogueRunning)
+        if (_playerInRange && !INK_Dialogue_Manager.instance._isDialogueRunning && index < inkJson.Length)
         {
             _visualQue.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E) && index < inkJson.Length && haveMorral == true)
+            if (Input.GetKeyDown(KeyCode.E) && haveMorral == true)
             {
                 //iniciar dialogo
                 changeScenes.reaadyToGO = true;
@@ -56,6 +57,7 @@ public class NpcDialogueTrigger : MonoBehaviour
             {
                 //Touching Item
                 haveMorral = true;
+                _needItem.SetActive(false);
                 itemWorld.DestroySelf();
             }
         }

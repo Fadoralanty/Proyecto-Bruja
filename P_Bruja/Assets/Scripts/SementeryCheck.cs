@@ -25,6 +25,7 @@ public class SementeryCheck : MonoBehaviour
         {
             _enemy.SetActive(true);
             _collider.enabled = false;
+            Game_Manager.instance.InCombat = false;
             if(index < inkJson.Length)
             {
                 INK_Dialogue_Manager.instance.EnterDialogueMode(inkJson[index]);
