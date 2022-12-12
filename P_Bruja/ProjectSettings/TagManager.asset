@@ -12,6 +12,7 @@ TagManager:
   - Bones
   - Book
   - BoneOne
+  - Grass
   layers:
   - Default
   - TransparentFX
